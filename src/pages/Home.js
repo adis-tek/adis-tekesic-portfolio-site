@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Projects from './Projects';
+import TechLogos from '../components/TechLogos';
 import adisScooter1 from '../images/adisScooter1.svg';
 import test from '../images/test1440.jpg';
 
@@ -21,6 +22,7 @@ function Home() {
                 <Test src={test} />
             </Image>
         </Hero>
+        <TechLogos />
         <Projects />
         </>
     );

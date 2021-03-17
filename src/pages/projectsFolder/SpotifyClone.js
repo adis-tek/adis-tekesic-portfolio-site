@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Projects() {
+function SpotifyClone() {
     return (
         <div>
-            <h1>Projects</h1>
+            <h1>Spotfiy</h1>
         </div>
     );
 };
 
-export default Projects;
+export default SpotifyClone;

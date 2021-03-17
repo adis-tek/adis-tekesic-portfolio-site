@@ -31,7 +31,9 @@ button{
         background-color: #23d997;
         color: white;
     }
-}
+    h1 {
+        font-family: "Rubik";
+    }
     h2{
         font-weight: lighter;
         font-size: 4rem;
@@ -57,6 +59,7 @@ button{
         font-size: 1.4rem;
         line-height: 150%;
     }
+}
 `;
 
 export default GlobalStyle;

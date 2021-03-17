@@ -15,6 +15,7 @@ const  Nav = () => {
                 </Link>
             </h1>
         </div>
+        <div>
         <ul>
             <li>
                 <Link to="/skills">
@@ -32,24 +33,30 @@ const  Nav = () => {
                 </Link>
             </li>
         </ul>
+        </div>
         </StyledNav>
     );
 };
 
 const StyledNav = styled.nav`
-    min-height: 10vh;
+    min-height: 3vh;
+    max-height: 3vh;
     display: flex;
+    flex-direction: row;
     margin: auto;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 10rem;
-    background: blue;
+    background: white;
     position: sticky;
     top: 0;
     z-index: 10;
     a {
         color: white;
         text-decoration: none;
+        font-family: 'Rubik';
+        letter-spacing: 1.25px;
+        color: #BABABA;
     }
     ul {
         display: flex;
@@ -61,9 +68,13 @@ const StyledNav = styled.nav`
         font-weight: lighter;
     }
     li {
-        padding-left: 10rem;
+        padding: 2rem;
+        margin: 1rem;
+        border-radius: 10%;
         position: relative;
+
     }
+    /*
     @media (max-width: 1300px) {
         flex-direction: column;
         padding: 2rem 1rem;
@@ -80,6 +91,7 @@ const StyledNav = styled.nav`
         padding: 0;
       }
     }
+    */
 `;
 
 export default Nav;

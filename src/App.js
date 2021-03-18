@@ -1,9 +1,8 @@
 import React from "react";
 import Nav from './components/Nav';
 import Home from './pages/Home';
-import Skills from './pages/Skills';
 import Projects from './pages/Projects';
-import Contact from './pages/Contact';
+import About from './pages/About';
 import { Switch, Route, useLocation } from "react-router-dom";
 import CovidTracker from "./pages/projectsFolder/CovidTracker";
 import GourmetGames from "./pages/projectsFolder/GourmetGames";
@@ -18,9 +17,6 @@ function App() {
         <Route path="/" exact>
             <Home />
           </Route>
-          <Route path="/skills">
-            <Skills />
-          </Route>
           <Route path="/projects" exact>
             <Projects />
           </Route>
@@ -33,8 +29,8 @@ function App() {
           <Route path="/projects/spotify-clone">
             <SpotifyClone />
           </Route>
-          <Route path="/contact">
-            <Contact />
+          <Route path="/about">
+            <About />
           </Route>
         </Switch>
     </div>

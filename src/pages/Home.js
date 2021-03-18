@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Projects from './Projects';
 import TechLogos from '../components/TechLogos';
+import ProjectRows from '../components/ProjectRows';
 import adisScooter1 from '../images/adisScooter1.svg';
 import test from '../images/test1440.jpg';
 
@@ -24,6 +25,7 @@ function Home() {
         </Hero>
         <TechLogos />
         <Projects />
+        <ProjectRows />
         </>
     );
 };

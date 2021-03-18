@@ -18,18 +18,13 @@ const  Nav = () => {
         <div>
         <ul>
             <li>
-                <Link to="/skills">
-                    Skills
-                </Link>
-            </li>
-            <li>
                 <Link to="/projects">
                     Projects
                 </Link>
             </li>
             <li>
-                <Link to="/contact">
-                    Contact
+                <Link to="/about">
+                    About
                 </Link>
             </li>
         </ul>

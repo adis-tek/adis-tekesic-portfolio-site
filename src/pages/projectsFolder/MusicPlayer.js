@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function GourmetGames() {
+function MusicPlayer() {
     return (
         <>
             <ProjectTextLeft>
@@ -29,6 +29,20 @@ function GourmetGames() {
                 <h1>I Am a Heading Dude</h1>
                 <p>Testing this text out over here dawg</p>
                 </TextColumn>
+                <LinksContainer>
+                <Link>
+                <img src={test} alt="icon"/>
+                <a href="#">Username</a>
+                </Link>
+                <Link>
+                <img src={test} alt="icon"/>
+                <a href="#">Username</a>
+                </Link>
+                <Link>
+                <img src={test} alt="icon"/>
+                <a href="#">Username</a>
+                </Link>
+                </LinksContainer>
             </ProjectTextCenter>
         </>
     );
@@ -97,4 +111,4 @@ const Link = styled.div`
     margin: 15px;
 `;
 
-export default GourmetGames;
+export default MusicPlayer;

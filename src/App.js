@@ -3,15 +3,18 @@ import Nav from './components/Nav';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import About from './pages/About';
+import GlobalStyle from './components/GlobalStyle';
 import { Switch, Route, useLocation } from "react-router-dom";
 import CovidTracker from "./pages/projectsFolder/CovidTracker";
 import GourmetGames from "./pages/projectsFolder/GourmetGames";
-import SpotifyClone from "./pages/projectsFolder/SpotifyClone";
+import MusicPlayer from "./pages/projectsFolder/MusicPlayer";
+import ContactBlock from './components/ContactBlock';
 
 function App() {
   const location = useLocation();
   return (
     <div className="App">
+      <GlobalStyle />
       <Nav />
       <Switch location={location} key={location.pathname}>
         <Route path="/" exact>
@@ -26,13 +29,11 @@ function App() {
           <Route path="/projects/gourmet-games">
             <GourmetGames />
           </Route>
-          <Route path="/projects/spotify-clone">
-            <SpotifyClone />
-          </Route>
-          <Route path="/about">
-            <About />
+          <Route path="/projects/music-player">
+            <MusicPlayer />
           </Route>
         </Switch>
+        <ContactBlock />
     </div>
   );
 };

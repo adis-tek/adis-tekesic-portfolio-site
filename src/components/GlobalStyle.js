@@ -4,7 +4,8 @@ const GlobalStyle = createGlobalStyle`
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+    outline: 1px solid red !important;
 }
 html{
     @media (max-width: 1700px){
@@ -13,13 +14,13 @@ html{
     
 }
 body{
-    background: #1b1b1b;
+    background: white;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
 }
 button{
     font-weight: bold;
-    font-size: 1.1.rem;
+    font-size: 1.1rem;
     cursor: pointer;
     padding: 1rem 2rem;
     border: 3px solid #23d997;

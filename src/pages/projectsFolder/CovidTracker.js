@@ -5,71 +5,120 @@ import test from '../../images/test1440.jpg';
 function CovidTracker() {
     return (
         <>
-            <Project1>
-                <ProjectText>
-                    <h1>Test Test</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure minus, earum nam autem placeat labore animi, alias exercitationem tempora libero consectetur eos sit qui optio accusantium quibusdam expedita officiis illo.</p>
-                </ProjectText>
-                <ProjectImages>
-                    <ProjectImage src={test} />
-                    <ProjectImage src={test} />
-                </ProjectImages>
-            </Project1>
-            <Project2>
-                <ProjectText>
-                    <h1>Test Test</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure minus, earum nam autem placeat labore animi, alias exercitationem tempora libero consectetur eos sit qui optio accusantium quibusdam expedita officiis illo.</p>
-                </ProjectText>
-                <ProjectImages>
-                    <ProjectImage src={test} />
-                    <ProjectImage src={test} />
-                </ProjectImages>
-            </Project2>
-            <GitHub>
-
-            </GitHub>
-
+        <ProjectIntro>
+            <img src={test} alt="project"/>
+            <h1>The Project of The Century</h1>
+            <p>Testing this intro to the project that will be discussed below.</p>
+        </ProjectIntro>
+            <ProjectTextLeft>
+                <TextColumn>
+                    <h1>I Am a Heading Dude</h1>
+                    <p>Testing this text out over here dawg</p>
+                </TextColumn>
+                <PhotoColumn>
+                    <img src={test} alt="test"/>
+                    <img src={test} alt="test"/>
+                </PhotoColumn>
+            </ProjectTextLeft>
+            <ProjectTextRight>
+                <TextColumn>
+                    <h1>I Am a Heading Dude</h1>
+                    <p>Testing this text out over here dawg</p>
+                </TextColumn>
+                <PhotoColumn>
+                    <img src={test} alt="test"/>
+                    <img src={test} alt="test"/>
+                </PhotoColumn>
+            </ProjectTextRight>
+            <ProjectTextCenter>
+                <TextColumn>
+                <h1>I Am a Heading Dude</h1>
+                <p>Testing this text out over here dawg</p>
+                </TextColumn>
+            </ProjectTextCenter>
         </>
     );
 };
 
-const Project1 = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`;
-
-const ProjectText = styled.div`
+const ProjectIntro = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 10px;
+    img {
+        max-width: 900px;
+        height: auto;
+        margin: 10px;
+    }
+    h1 {
+        font-size: 26px;
+        margin: 10px;
+    }
+    p {
+        font-size: 18px;
+        margin: 10px;
+    }
+
 `;
 
-const ProjectImages = styled.div`
+const ProjectTextLeft = styled.div`
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 `;
 
-const ProjectImage = styled.img`
-    width: 300px;
-    height: auto;
-`;
-
-
-const Project2 = styled.div`
+const ProjectTextRight = styled.div`
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
+`;
+
+const ProjectTextCenter = styled.div`
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 `;
 
-const GitHub = styled.div`
-    
+const TextColumn = styled.div`
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+        margin: 15px;
+    }
 `;
 
+const PhotoColumn = styled.div`
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+        margin: 15px;
+        width: 500px;
+        height: auto;
+    }
+`;
+
+const LinksContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    img {
+        width: 200px;
+        height: auto;
+        margin: 15px;
+    }
+`;
+
+const Link = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+`;
 
 
 export default CovidTracker;

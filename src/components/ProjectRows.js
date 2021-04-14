@@ -14,8 +14,7 @@ function ProjectRows() {
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea ab deserunt ipsa ipsum labore, illum sunt explicabo voluptatem a itaque soluta quidem nisi laboriosam eligendi hic quod, omnis tenetur incidunt?</p>
                     </RowText>
                     <RowButtons>
-                        <button href="/projects">Check out my other projects</button>
-                        <button href="/projects/covid-tracker">Read more about this one</button>
+                        <button href="/projects/covid-tracker">See this project</button>
                     </RowButtons>
                     </VerticalRow>
                 </Row1>
@@ -27,7 +26,6 @@ function ProjectRows() {
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea ab deserunt ipsa ipsum labore, illum sunt explicabo voluptatem a itaque soluta quidem nisi laboriosam eligendi hic quod, omnis tenetur incidunt?</p>
                     </RowText>
                     <RowButtons>
-                        <button href="/projects">Check out my other projects</button>
                         <button href="/projects/covid-tracker">Read more about this one</button>
                     </RowButtons>
                     </VerticalRow>
@@ -40,7 +38,6 @@ function ProjectRows() {
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea ab deserunt ipsa ipsum labore, illum sunt explicabo voluptatem a itaque soluta quidem nisi laboriosam eligendi hic quod, omnis tenetur incidunt?</p>
                     </RowText>
                     <RowButtons>
-                        <button href="/projects">Check out my other projects</button>
                         <button href="/projects/covid-tracker">Read more about this one</button>
                     </RowButtons>
                     </VerticalRow>

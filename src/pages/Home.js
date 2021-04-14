@@ -8,7 +8,7 @@ import test from '../images/test1440.jpg';
 
 function Home() {
     return (
-        <>
+    <HomeContainer>
         <Hero>
             <Description>
                 <TextBox>
@@ -24,11 +24,13 @@ function Home() {
             </Image>
         </Hero>
         <TechLogos />
-        <Projects />
         <ProjectRows />
-        </>
+    </HomeContainer>
     );
 };
+
+const HomeContainer = styled.div`
+`;
 
 const Hero = styled.div`
     display: flex;

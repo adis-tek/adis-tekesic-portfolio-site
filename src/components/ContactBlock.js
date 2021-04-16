@@ -6,8 +6,9 @@ function ContactBlock() {
         <>
         <ContactBlockContainer>
         <h3>LOGO</h3>
-        <h3>Testing out this paragraph.</h3>
-        <h3>Test</h3>
+        <h3>Built in react with redux.</h3>
+        <h3>Icons</h3>
+        <h3>Developed by Adis Tekesic</h3>
         </ContactBlockContainer>
         </>
     )

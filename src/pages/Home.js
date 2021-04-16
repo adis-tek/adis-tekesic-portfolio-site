@@ -5,6 +5,8 @@ import TechLogos from '../components/TechLogos';
 import ProjectRows from '../components/ProjectRows';
 import adisScooter1 from '../images/adisScooter1.svg';
 import test from '../images/test1440.jpg';
+import adis_scooter from '../images/adis_scooterPNG.png';
+import three_b from '../images/three-b.png';
 
 function Home() {
     return (
@@ -17,10 +19,10 @@ function Home() {
                 </TextBox>
             </Description>
             <Avatar>
-                <Scooter src={adisScooter1} />
+                <Scooter src={adis_scooter} />
             </Avatar>
             <Image>
-                <Test src={test} />
+                <Test src={three_b} />
             </Image>
         </Hero>
         <TechLogos />
@@ -82,7 +84,7 @@ const Scooter = styled.img`
     position: relative;
     z-index: 1;
     height: auto;
-    width: 30vw;
+    width: 20vw;
     top: 55px;
     left: 20px;
 `;

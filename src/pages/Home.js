@@ -6,7 +6,7 @@ import ProjectRows from '../components/ProjectRows';
 import adisScooter1 from '../images/adisScooter1.svg';
 import test from '../images/test1440.jpg';
 import adis_scooter from '../images/adis_scooterPNG.png';
-import three_b from '../images/three-b.png';
+import three_b from '../images/three_b.png';
 
 function Home() {
     return (
@@ -36,7 +36,7 @@ const HomeContainer = styled.div`
 
 const Hero = styled.div`
     display: flex;
-    height: 80vh;
+    height: 60vh;
     align-items: center;
     justify-content: space-around;
     background-color: white;
@@ -73,11 +73,10 @@ const TextBox = styled.div`
 
 const Avatar = styled.div`
     display: flex;
-    background-color: red;
     align-items: center;
     height: 100%;
     z-index: 0;
-    width: 5%;
+    width: 3%;
 `;
 
 const Scooter = styled.img`
@@ -91,16 +90,16 @@ const Scooter = styled.img`
 
 const Image = styled.div`
     display: flex;
-    background-color: purple;
-    width: 50%;
+    width: 70%;
     align-items: center;
     justify-content: center;
     height: 100%;
+    margin: 0 20px;
 `;
 
 const Test = styled.img`
     display: flex;
-    width: 80%;
+    width: 100%;
     align-items: center;
     height: auto;
 `;

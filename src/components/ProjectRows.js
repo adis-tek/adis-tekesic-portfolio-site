@@ -1,13 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
 import test from '../images/test1440.jpg';
+import two_b from '../images/two_b.png';
+import one_g from '../images/one_g.png';
+import two_m from '../images/two_m.png';
 
 function ProjectRows() {
     return (
         <>
             <RowContainer>
                 <Row1>
-                    <RowImage src={test} alt="test" />
+                    <RowImage src={two_b} alt="test" />
+                    <VerticalRow>
+                    <RowText>
+                        <h1>Track Covid & Avoid It</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea ab deserunt ipsa ipsum labore, illum sunt explicabo voluptatem a itaque soluta quidem nisi laboriosam eligendi hic quod, omnis tenetur incidunt?</p>
+                    </RowText>
+                    <RowButtons>
+                        <button href="/projects/covid-tracker">See this project</button>
+                    </RowButtons>
+                    </VerticalRow>
+                </Row1>
+                <Row2>
+                    <RowImage src={one_g} alt="test" />
                     <VerticalRow>
                     <RowText>
                         <h1>Track Covid<br />& Avoid It</h1>
@@ -17,28 +32,16 @@ function ProjectRows() {
                         <button href="/projects/covid-tracker">See this project</button>
                     </RowButtons>
                     </VerticalRow>
-                </Row1>
-                <Row2>
-                    <RowImage src={test} alt="test" />
-                    <VerticalRow>
-                    <RowText>
-                        <h1>Track Covid<br />& Avoid It</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea ab deserunt ipsa ipsum labore, illum sunt explicabo voluptatem a itaque soluta quidem nisi laboriosam eligendi hic quod, omnis tenetur incidunt?</p>
-                    </RowText>
-                    <RowButtons>
-                        <button href="/projects/covid-tracker">Read more about this one</button>
-                    </RowButtons>
-                    </VerticalRow>
                 </Row2>
                 <Row1>
-                    <RowImage src={test} alt="test" />
+                    <RowImage src={two_m} alt="test" />
                     <VerticalRow>
                     <RowText>
                         <h1>Track Covid<br />& Avoid It</h1>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea ab deserunt ipsa ipsum labore, illum sunt explicabo voluptatem a itaque soluta quidem nisi laboriosam eligendi hic quod, omnis tenetur incidunt?</p>
                     </RowText>
                     <RowButtons>
-                        <button href="/projects/covid-tracker">Read more about this one</button>
+                        <button href="/projects/covid-tracker">See this project</button>
                     </RowButtons>
                     </VerticalRow>
                 </Row1>
@@ -58,17 +61,14 @@ const Row1 = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40vh;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    height: 40vw;
+    margin: 10px;
     padding: 10px;
 
 `;
 
 const RowImage = styled.img`
-    width: 450px;
+    max-width: 60vw;
     height: auto;
     margin: 30px;
 
@@ -79,16 +79,17 @@ const RowText = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
     h1 {
         font-family: "Lato", sans-serif;
-        font-size: 2rem;
+        font-size: 3rem;
         width: 70%;
+        margin: 10px;
     }
     p {
         font-family: "Gothic A1", sans-serif;
-        font-size: 1rem;
+        font-size: 1.75rem;
         width: 70%;
+        margin: 10px;
     }
 `;
 
@@ -103,12 +104,6 @@ const RowButtons = styled.div`
     justify-content: space-evenly;
     height: auto;
     margin: 30px;
-    button {
-        border-radius: 20px;
-        color: black;
-        background-color: white;
-        border: 1px solid blue;
-    }
 `;
 
 const Row2 = styled.div`
@@ -116,11 +111,8 @@ const Row2 = styled.div`
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    height: 40vh;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    height: 40vw;
+    margin: 10px;
     padding: 10px;
 `;
 

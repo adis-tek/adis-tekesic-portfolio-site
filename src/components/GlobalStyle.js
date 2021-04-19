@@ -20,17 +20,16 @@ body{
 }
 button{
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     cursor: pointer;
-    padding: 1rem 2rem;
-    border: 3px solid #23d997;
-    background: transparent;
+    padding: 1.2rem 4.3rem;
+    background: #5fc9f8;
     color: white;
     transition: all 0.5s ease;
     font-family: 'Inter', sans-serif;
+    border-radius: 20px;
     &:hover{
-        background-color: #23d997;
-        color: white;
+        transform: translate(0px, -7.5px);
     }
     h1 {
         font-family: "Rubik";

@@ -1,45 +1,263 @@
 import React from 'react';
 import styled from 'styled-components';
-import Projects from './Projects';
 import TechLogos from '../components/TechLogos';
 import ProjectRows from '../components/ProjectRows';
-import adisScooter1 from '../images/adisScooter1.svg';
-import test from '../images/test1440.jpg';
-import adis_scooter from '../images/adis_scooterPNG.png';
-import three_b from '../images/three_b.png';
+import adis_scooter from '../images/home/adis_scooterPNG.png';
+import three_b from '../images/project_breathe/three_b_edited.png';
+import wide_smile from '../images/home/wide_smile.png';
+import github from '../images/home/github.png';
+
 
 function Home() {
     return (
     <HomeContainer>
+        <Intro>
+            <Message>
+            <Memoji src={wide_smile} alt="wide_smile_Adis" />
+            <TextContainer>
+            <HeadingText>Hi, I'm Adis</HeadingText>
+            <Text>
+            I started teaching myself front-end
+            web development a year ago
+            and now I make cool apps
+            </Text>
+            </TextContainer>
+            </Message>
+        </Intro>
+        <TechLogos />
         <Hero>
             <Description>
                 <TextBox>
-                <h1>Testing Testing</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eligendi, eaque ex doloribus suscipit doloremque accusamus voluptatem in error corporis excepturi nobis vitae alias nulla. Temporibus natus sapiente magnam adipisci!</p>
+                <TextBoxHeading>Making Apps<br></br>People Enjoy</TextBoxHeading>
+                <TextBoxParagraph>Putting together code that is more than just an app but a positive experience users can't get enough of.</TextBoxParagraph>
                 </TextBox>
             </Description>
-            <Avatar>
-                <Scooter src={adis_scooter} />
-            </Avatar>
             <Image>
-                <Test src={three_b} />
+                <AppImage src={three_b} />
             </Image>
         </Hero>
-        <TechLogos />
         <ProjectRows />
     </HomeContainer>
     );
 };
 
 const HomeContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    z-index: 1;
+    @media (max-width: 1025px) {
+        margin-top: 0px;
+    }
+`;
+
+const Memoji = styled.img`
+    width: 266px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 50px;
+    @media (max-width: 1025px) {
+        width: 366px;
+        margin-right: 0px;
+    }
+    @media (max-width: 550px) {
+        width: 266px;
+    }
+`;
+
+const TextContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    max-width: 500px;
+`;
+
+const HeadingText = styled.h1`
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 400;
+    @media (max-width: 1025px) {
+        font-size: 48px;
+        text-align: center;
+    }
+    @media (max-width: 550px) {
+        width: 266px;
+        font-size: 42px;
+    }
+`;
+
+
+const Text = styled.h2`
+    font-family: 'Roboto', sans-serif;
+    width: 400px;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: black;
+    @media (max-width: 1025px) {
+        width: 366px;
+        font-size: 25px;
+        margin-left: 35px;
+
+    }
+    @media (max-width: 550px) {
+        width: 266px;
+        font-size: 21px;
+        margin-left: 15px;
+    }
+
+`;
+
+const Message = styled.div`
+    position: relative;
+    display: flex;
+    bottom: 0px;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 1025px) {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+`;
+
+const IntroBackground = styled.div`
+    position: relative;
+    background-color: blue;
+`;
+
+const Intro = styled.div`
+    display: flex;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.0);
+    align-items: center;
+    @media (max-width: 1025px) {
+        margin-top: 30px;
+        height: auto;
+    }
 `;
 
 const Hero = styled.div`
     display: flex;
-    height: 60vh;
+    width: 100%;
+    height: 400px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     background-color: white;
+    @media (max-width: 1025px) {
+        flex-direction: column-reverse;
+        height: 700px;
+        margin: 0px 0px;
+    }
+    @media (max-width: 900px) {
+        flex-direction: column-reverse;
+        margin: 0px 0px;
+    }
+    @media (max-width: 800px) {
+        flex-direction: column-reverse;
+        height: 600px;
+        margin: 0px 0px;
+    }
+    @media (max-width: 700px) {
+        flex-direction: column-reverse;
+        height: 600px;
+        margin: 0px 0px;
+    }
+    @media (max-width: 600px) {
+        flex-direction: column-reverse;
+        height: 550px;
+        margin: 0px 0px;
+    }
+    @media (max-width: 475px) {
+        flex-direction: column-reverse;
+        height: 500px;
+        margin: 0px 0px;
+    }
+`;
+
+const BottomContact = styled.div`
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.1rem;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 60vw;
+    height: 40px;
+    border-top: 1px solid rgba(5, 5, 5, 0.1);
+    border-bottom: 1px solid rgba(5, 5, 5, 0.1);
+    bottom: 100px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(5, 5, 5, 1);
+`;
+
+const Comment = styled.div`
+    display: flex;
+    width: 33%;
+    border-right: 1px solid rgba(5, 5, 5, 0.1);
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    margin-left: 40px;
+    
+`;
+
+const CommentText = styled.h2`
+    width: 100%;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 13px;
+`;
+
+const Email = styled.div`
+    position: relative;
+    display: flex;
+    width: 33%;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+`;
+
+const SocialMedia = styled.div`
+    position: relative;
+    right: 0px;
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgba(5, 5, 5, 0.1);
+`;
+
+const Github = styled.img`
+    width: 17px;
+    height: auto;
+    object-fit: cover;
+    justify-self: center;
+    align-self: center;
+    margin-right: 20px;
+`;
+
+const LinkedIn = styled.img`
+    width: 17px;
+    height: auto;
+    object-fit: cover;
 `;
 
 const Description = styled.div`
@@ -47,27 +265,55 @@ const Description = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-self: center;
     width: 30%;
-    height: 100%;
+    height: auto;
+    margin: 0px 20px;
+    @media (max-width: 1025px) {
+        width: 100%;
+        margin: 20px 5px;
+    }
 `;
 
 const TextBox = styled.div`
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: auto;
-    margin-left: 20px;
-    padding-left: 20px;
-    h1 {
-        font-family: 'Lato', sans-serif;
-        font-weight: 800;
-        line-height: 150%;
-        margin-left: 0;
-        padding-left: 0;
+    width: 85%;
+    margin-left: 10px;
+    padding-left: 10px;
+    @media (max-width: 1025px) {
+        width: 100%;
     }
-    p {
-        font-family: 'Gothic A1', sans-serif;
-        line-height: 200%;
+`;
+
+const TextBoxHeading = styled.h1`
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    @media (max-width: 1025px) {
+        font-size: 32px;
+        width: 60%;
+        margin: 15px 0px;
+        align-self: center;
+    }
+    @media (max-width: 525px) {
+        width: 80%;
+    }
+`;
+
+const TextBoxParagraph = styled.h2`
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    @media (max-width: 1025px) {
+        line-height: 32px;
+        font-size: 22px;
+        width: 60%;
+        align-self: center;
+    }
+    @media (max-width: 525px) {
+        width: 80%;
     }
 `;
 
@@ -90,18 +336,28 @@ const Scooter = styled.img`
 
 const Image = styled.div`
     display: flex;
-    width: 70%;
+    width: 60%;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 30;
     margin: 0 20px;
+    @media (max-width: 1025px) {
+        margin: 0px 0px;
+        width: 100%;
+    }
 `;
 
-const Test = styled.img`
+const AppImage = styled.img`
     display: flex;
     width: 100%;
     align-items: center;
     height: auto;
+    @media (max-width: 1025px) {
+        width: 98%;
+    }
+    @media (max-width: 700px) {
+        width: 98%;
+    }
 `;
 
 export default Home;

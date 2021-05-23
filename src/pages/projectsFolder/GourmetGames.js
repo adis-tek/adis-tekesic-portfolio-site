@@ -1,120 +1,138 @@
 import React from 'react';
 import styled from 'styled-components';
 import test from '../../images/test1440.jpg';
-import one_g from '../../images/one_g.png';
-import two_g from '../../images/two_g.png';
-import three_g from '../../images/three_g.png';
-import four_g from '../../images/four_g.png';
+import one_g from '../../images/gourmet_games/one_g.png';
+import two_g from '../../images/gourmet_games/two_g.png';
+import three_g from '../../images/gourmet_games/three_g.png';
+import four_g from '../../images/gourmet_games/four_g.png';
 
-function CovidTracker() {
+function GourmetGames() {
     return (
-        <>
-        <ProjectIntro>
-            <IntroImage src={one_g} alt="project"/>
-            <h1>The Project of The Century</h1>
-            <p>Testing this intro to the project that will be discussed below.</p>
-        </ProjectIntro>
-        <ProjectTextRight>
-                <TextColumn>
-                    <h1>I Am a Heading Dude</h1>
-                    <p>Testing this text out over here dawg</p>
-                </TextColumn>
-                <PhotoColumn>
-                    <RowImage src={two_g} alt="test"/>
-                </PhotoColumn>
-            </ProjectTextRight>
-            <ProjectTextLeft>
-                <TextColumn>
-                    <h1>I Am a Heading Dude</h1>
-                    <p>Testing this text out over here dawg</p>
-                </TextColumn>
-                <PhotoColumn>
+        <ProjectContainer>
+            <ProjectInnerContainer>
+            <ProjectIntro>
+                <IntroImage src={two_g} alt="test"/>
+                <Header>Project Breathe</Header>
+                <Paragraph>After the climax of the Covid-19 pandemic, a vaccine was finally made. People were then left wondering when the world would return back to normal.</Paragraph>
+            </ProjectIntro>
+            <ProjectMain>
+                    <Paragraph>Each state was moving at a different pace with their vaccinations. To get a better idea we decided to fetch data and monitor everything from new daily cases to the vaccination rate.</Paragraph>
                     <RowImage src={three_g} alt="test"/>
-                </PhotoColumn>
-            </ProjectTextLeft>
-            <ProjectTextRight>
-                <TextColumn>
-                    <h1>I Am a Heading Dude</h1>
-                    <p>Testing this text out over here dawg</p>
-                </TextColumn>
-                <PhotoColumn>
-                    <RowImage src={four_g} alt="test"/>
-                </PhotoColumn>
-            </ProjectTextRight>
-            <ProjectTextCenter>
-                <TextColumn>
-                <h1>I Am a Heading Dude</h1>
-                <p>Testing this text out over here dawg</p>
-                </TextColumn>
-            </ProjectTextCenter>
-        </>
+                    <Paragraph>And by charting these key metrics we’ll get a clear understanding of the kind of progress each state is making.</Paragraph>
+                    <CTA>Check Out The Code</CTA>
+                    <Paragraph>You can view the live app as well as my code on github below.</Paragraph>
+            </ProjectMain>
+            </ProjectInnerContainer>
+        </ProjectContainer>
     );
 };
+
+const ProjectContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+`;
+
+const ProjectInnerContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 1400px) {
+        width: 1400px;
+    }
+`;
+
+const ProjectMain = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+`;
 
 const ProjectIntro = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
-    h1 {
-        font-size: 26px;
-        margin: 10px;
-    }
-    p {
-        font-size: 18px;
-        margin: 10px;
-    }
-
+    width: 100%;
 `;
 
 const IntroImage = styled.img`
-    width: 70vw;
+    width: 90%;
     height: auto;
-    margin: 50px;
-`;
-
-const RowImage = styled.img`
-    width: 60vw;
-    height: auto;
-`;
-
-const ProjectTextLeft = styled.div`
-    display: flex;
-    height: 80vh;
-`;
-
-const ProjectTextRight = styled.div`
-    display: flex;
-    flex-direction: row-reverse;
-    height: 80vh;
-`;
-
-const ProjectTextCenter = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-`;
-
-const TextColumn = styled.div`
-    display: flex;
-    width: 40%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    p {
-        margin: 15px;
+    margin: 40px 50px;
+    object-fit: cover;
+    @media (max-width: 1025px) {
+        margin: 0px 50px;
     }
 `;
 
-const PhotoColumn = styled.div`
+const Header = styled.h1`
+    font-size: 40px;
+    font-weight: 500;
+    max-width: 800px;
+    width: 90%;
+    @media (max-width: 1025px) {
+        font-size: 35px;
+        margin: 25px 0px 0px 0px;
+    }
+`;
+
+const CTA = styled.h1`
+    font-size: 40px;
+    font-weight: 500;
+    max-width: 800px;
+    width: 90%;
+    margin: 30px 0px 0px 0px;
+    @media (max-width: 1025px) {
+        font-size: 35px;
+        margin: 25px 0px 0px 0px;
+    }
+`;
+
+const IntroParagraph = styled.h2`
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    width: 1000px;
+    line-height: 1.5;
+    margin-top: 30px;
+    margin-bottom: 50px;
+`;
+
+const Paragraph = styled.h2`
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    max-width: 800px;
+    width: 90%;
+    line-height: 1.5;
+    margin: 15px 10px 20px 10px;
+`;
+
+const RowImage = styled.img`
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 60px 10px 60px 10px;
+`;
+
+const Section = styled.div`
     display: flex;
-    width: 70%;
     flex-direction: column;
-    justify-content: center;
+    height: auto;
     align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 `;
 
 const LinksContainer = styled.div`
@@ -128,12 +146,5 @@ const LinksContainer = styled.div`
     }
 `;
 
-const Link = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-`;
 
-
-export default CovidTracker;
+export default GourmetGames;

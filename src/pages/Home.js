@@ -7,7 +7,6 @@ import three_b from '../images/project_breathe/three_b_edited.png';
 import wide_smile from '../images/home/wide_smile.png';
 import github from '../images/home/github.png';
 
-
 function Home() {
     return (
     <HomeContainer>
@@ -24,11 +23,12 @@ function Home() {
             </TextContainer>
             </Message>
         </Intro>
-        <TechLogos />
+        {/* <TechLogos /> */}
+        <Line />
         <Hero>
             <Description>
                 <TextBox>
-                <TextBoxHeading>Making Apps<br></br>People Enjoy</TextBoxHeading>
+                <TextBoxHeading>Making Apps That Excite People</TextBoxHeading>
                 <TextBoxParagraph>Putting together code that is more than just an app but a positive experience users can't get enough of.</TextBoxParagraph>
                 </TextBox>
             </Description>
@@ -36,6 +36,7 @@ function Home() {
                 <AppImage src={three_b} />
             </Image>
         </Hero>
+        <Line2 />
         <ProjectRows />
     </HomeContainer>
     );
@@ -54,7 +55,7 @@ const HomeContainer = styled.div`
 `;
 
 const Memoji = styled.img`
-    width: 266px;
+    width: 300px;
     height: auto;
     object-fit: cover;
     margin-right: 50px;
@@ -64,6 +65,9 @@ const Memoji = styled.img`
     }
     @media (max-width: 550px) {
         width: 266px;
+    }
+    @media (max-width: 450px) {
+        width: 225px;
     }
 `;
 
@@ -116,6 +120,18 @@ const Text = styled.h2`
 
 `;
 
+const Line = styled.div`
+    width: 90%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 80px 0px 0px 0px;
+`;
+
+const Line2 = styled.div`
+    width: 90%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 50px 0px 50px 0px;
+`;
+
 const Message = styled.div`
     position: relative;
     display: flex;
@@ -126,6 +142,7 @@ const Message = styled.div`
     align-self: center;
     align-items: center;
     justify-content: center;
+    margin: 50px 0px 0px 0px;
     @media (max-width: 1025px) {
         flex-direction: column;
         margin-top: 10px;
@@ -154,39 +171,56 @@ const Intro = styled.div`
 
 const Hero = styled.div`
     display: flex;
+    max-width: 1350px;
     width: 100%;
     height: 400px;
     align-items: center;
     justify-content: center;
     background-color: white;
+    margin: 50px 0px;
     @media (max-width: 1025px) {
         flex-direction: column-reverse;
         height: 700px;
-        margin: 0px 0px;
+        margin: 60px 0px 0px 0px;
     }
     @media (max-width: 900px) {
         flex-direction: column-reverse;
-        margin: 0px 0px;
+        margin: 50px 0px 0px 0px;
     }
     @media (max-width: 800px) {
         flex-direction: column-reverse;
         height: 600px;
-        margin: 0px 0px;
+        margin: 60px 0px 0px 0px;
     }
     @media (max-width: 700px) {
         flex-direction: column-reverse;
         height: 600px;
-        margin: 0px 0px;
+        margin: 60px 0px 0px 0px;
     }
     @media (max-width: 600px) {
         flex-direction: column-reverse;
         height: 550px;
-        margin: 0px 0px;
+        margin: 40px 0px 0px 0px;
+    }
+    @media (max-width: 500px) {
+        flex-direction: column-reverse;
+        height: 550px;
+        margin: 50px 0px 0px 0px;
     }
     @media (max-width: 475px) {
         flex-direction: column-reverse;
         height: 500px;
-        margin: 0px 0px;
+        margin: 40px 0px 30px 0px;
+    }
+    @media (max-width: 425px) {
+        flex-direction: column-reverse;
+        height: 500px;
+        margin: 40px 0px 50px 0px;
+    }
+    @media (max-width: 350px) {
+        flex-direction: column-reverse;
+        height: 500px;
+        margin: 40px 0px 80px 0px;
     }
 `;
 
@@ -342,7 +376,7 @@ const Image = styled.div`
     height: 30;
     margin: 0 20px;
     @media (max-width: 1025px) {
-        margin: 0px 0px;
+        margin: 0px 0px 0px 20px;
         width: 100%;
     }
 `;

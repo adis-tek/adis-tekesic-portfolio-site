@@ -1,26 +1,12 @@
 import React, { useState } from 'react';
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
 import disableScroll from 'disable-scroll';
-
-const variants = {
-    open: {opacity: 1, x: 0 },
-    closed: { opacity: 0, x: "-100%" },
-}
+import wp from '../pdf/Exacaster_Telco_White_Paper.pdf';
 
 const  Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrollDisabled, setScrollDisabled] = useState(true);
-    const iconVariant = {
-        opened: {
-    
-        },
-        closed: {
-    
-        }
-      }
       function MenuToggle() {
         setIsOpen(state => !state);
         setScrollDisabled(state => !state);
@@ -30,8 +16,9 @@ const  Nav = () => {
             disableScroll.off();
         }
       }
+
     return (
-<Navigation>
+    <Navigation>
         {!isOpen &&
         <>
         <MobileNav>
@@ -40,10 +27,7 @@ const  Nav = () => {
                 Adis Tekesic
             </Link>
         </Logo>
-        <NavSvg 
-        initial={false}
-        variants={iconVariant}
-        animate={isOpen ? "opened" : "closed"}
+        <NavSvg
         onClick = {MenuToggle}
         width="24" 
         height="24" 
@@ -57,7 +41,7 @@ const  Nav = () => {
         </MobileNav>
         </>
         }
- {isOpen &&
+    {isOpen &&
         <Menu>
             <XContainer onClick={MenuToggle}><SvgX
             width="24"
@@ -74,7 +58,7 @@ const  Nav = () => {
             <MenuInnerContainer>
             <Link onClick={MenuToggle} to="about"><MenuItem>ABOUT</MenuItem></Link>
             <Link onClick={MenuToggle} to="contact"><MenuItem>CONTACT</MenuItem></Link>
-            <Link onClick={MenuToggle} to="resume"><MenuItem>RESUME</MenuItem></Link>
+            <a onClick={MenuToggle} href={wp}><MenuItem>RESUME</MenuItem></a>
             </MenuInnerContainer>
         </Menu>
     } 
@@ -96,15 +80,15 @@ const  Nav = () => {
                 </Link>
             </li>
             <li>
-                <Link id="li" to="/resume">
+                <a id="li" href={wp}>
                     Resume
-                </Link>
+                </a>
             </li>
         </ul>
 
     </DesktopMenu>
 
-</Navigation>
+    </Navigation>
     );
 };
 
@@ -118,7 +102,7 @@ const Navigation = styled.nav`
         position: relative;
         display: flex;
         list-style: none;
-        margin-right: 50px;
+        margin: 0px 50px 0px 0px;
         @media (max-width: 1000px) {
         display: none;
     }
@@ -143,8 +127,8 @@ const Logo = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    @media screen and (min-width: 1000px) {
-        margin-left: 50px;
+    @media screen and (min-width: 1026px) {
+        margin: 0px 0px 0px 50px;
     }
     a {
         font-size: 1.5rem;
@@ -155,12 +139,12 @@ const Logo = styled.div`
         font-size: 32px;
     }
     }
-    @media (max-width: 1000px) {
+    @media (max-width: 1025px) {
         height: 50px;
         padding: 4rem 6rem;
     }
     @media (min-width: 475px) and (max-width: 750px) {
-        margin-left: -20px;
+        margin: 0px 0px 0px -20px;
     }
     @media (max-width: 475px) {
         height: 50px;
@@ -174,7 +158,7 @@ const Logo = styled.div`
 
 const MobileNav = styled.div`
     display: none;
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1025px) {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -215,37 +199,16 @@ const MenuItem = styled.h2`
     text-align: center;
     @media (max-width: 450px) {
         font-size: 45px;
-        margin-bottom: 70px;
+        margin: 0px 0px 70px 0px;
     }
     @media (max-width: 350px) {
-        margin-bottom: 70px;
-    }
-`;
-
-const OpenMenu = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-`;
-
-const Alignment = styled.div`
-    display: flex;
-    flex-direction: column;
-
-`;
-
-const MobileMenu = styled.div`
-    display: none;
-    @media (max-width: 1000px) {
-        display: flex;
+        margin: 0px 0px 70px 0px;
     }
 `;
 
 const DesktopMenu = styled.div`
     display: none;
-    @media (min-width: 1000px) {
+    @media (min-width: 1026px) {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -255,19 +218,19 @@ const DesktopMenu = styled.div`
 `;
 
 const NavSvg = styled.svg `
-  right: 0;
   width: 52px;
   height: 52px;
-  margin-right: 30px;
+  margin: 0px 30px 0px 0px;
+  right: 0;
   @media (min-width: 500px) {
-        margin-right: 50px;
+        margin: 0px 50px 0px 0px;
     }
   @media (max-width: 475px) {
         width: 42px;
         height: 42px;
     }
     @media (max-width: 375px) {
-        margin-right: 20px;
+        margin: 0px 20px 0px 0px;
     }
 `;
 
@@ -284,34 +247,8 @@ const SvgX = styled.svg`
   margin-top: 20px;
   margin-right: 40px;
   @media (max-width: 350px) {
-        margin-bottom: 5px;
-        margin-right: 20px;
+      margin: 0px 20px 5px 0px;
     }
 `;
-
-    //#li {
-    //    color: rgb(5, 5, 5);
-    //    :active {
-     //       background-color: white;
-    //    }
-    /*
-    @media (max-width: 1300px) {
-        flex-direction: column;
-        padding: 2rem 1rem;
-        #logo {
-            display: inline-block;
-            margin: 1rem;
-        }
-        ul {
-            padding: 2rem;
-            justify-content: space-around;
-            width: 100%;
-        }
-        li {
-        padding: 0;
-      }
-    }
-    */
-
 
 export default Nav;

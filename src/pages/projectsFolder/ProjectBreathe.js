@@ -12,14 +12,23 @@ function ProjectBreathe() {
         <ProjectIntro>
             <IntroImage src={two_b} alt="project"/>
             <Header>Project Breathe</Header>
-            <Paragraph>After the climax of the Covid-19 pandemic, a vaccine was finally made. People were then left wondering when the world would return back to normal.</Paragraph>
+            <Paragraph>After the climax of the Covid-19 pandemic, a vaccine was finally made. This was a pivotal moment in history since it meant that the world would soon go back to normal.</Paragraph>
         </ProjectIntro>
         <ProjectMain>
-                <Paragraph>Each state was moving at a different pace with their vaccinations. To get a better idea we decided to fetch data and monitor everything from new daily cases to the vaccination rate.</Paragraph>
+                <Paragraph>Each state was moving at a different pace with their vaccinations. To get a better idea of the progress I decided to fetch data and monitor crucial metrics like new daily cases and the vaccination rate.
+</Paragraph>
                 <RowImage src={three_b} alt="test"/>
-                <Paragraph>And by charting these key metrics we’ll get a clear understanding of the kind of progress each state is making.</Paragraph>
+                <Paragraph>This is a react app that leverages Material-UI’s cards and grid library that creates a neat and responsive layout.  Data is updated daily and fetched from the Covid Act Now API and is then presented on charts (created with the Recharts library) so users can better understand the trend.</Paragraph>
+                <Paragraph>I chose to use the Recharts library for charting the data (it was much easier to use than Material-UI charts).</Paragraph>
+                <Paragraph>The app gives users quick access to new daily data for all fifty states. Data is automatically presented on charts so users can visually see the trends and nine key metrics are collected daily to determine the rate of progress.</Paragraph>
+                <Paragraph>This was a very simple, one-page card layout of crucial data metrics from all fifty of the states, and memory was managed simply by using the default React hooks.</Paragraph>
+                <Line />
                 <Header>Check Out The Code</Header>
                 <Paragraph>You can view the live app as well as my code on github below.</Paragraph>
+                <Links>
+                <a href="https://github.com/adis-tek" target="_blank"><Live>Live</Live></a>
+                <a href="https://www.linkedin.com/in/adis-tekesic-a471b6171" target="_blank"><Github>Github</Github></a>
+                </Links>
         </ProjectMain>
         </ProjectInnerContainer>
     </ProjectContainer>
@@ -33,6 +42,10 @@ const ProjectContainer = styled.div`
     height: auto;
     align-items: center;
     justify-content: center;
+    margin: 0px 0px 60px 0px;
+    @media (max-width: 450px) {
+        margin: 0px 0px 40px 0px;
+    }
 `;
 
 const ProjectInnerContainer = styled.div`
@@ -66,12 +79,14 @@ const ProjectIntro = styled.div`
 `;
 
 const IntroImage = styled.img`
+    max-width: 1000px;
     width: 90%;
     height: auto;
-    margin: 40px 50px;
+    margin: 40px 50px 60px 50px;
     object-fit: cover;
     @media (max-width: 1025px) {
-        margin: 0px 50px;
+        width: 105%;
+        margin: 0px 50px 20px 50px;
     }
 `;
 
@@ -112,6 +127,10 @@ const RowImage = styled.img`
     height: auto;
     margin: 20px 40px;
     object-fit: cover;
+    @media (max-width: 1025px) {
+        width: 110%;
+        margin: 20px 50px 20px 50px;
+    }
 `;
 
 const Section = styled.div`
@@ -134,29 +153,64 @@ const LinksContainer = styled.div`
     }
 `;
 
-{/*     @media (min-width: 1400px) {
-
+const Links = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 900px;
+    width: 90%;
+    height: auto;
+    margin: 20px 0px 0px 0px;
+    @media (max-width: 450px) {
+        flex-direction: column;
+        margin: 30px 0px 30px 0px;
     }
-    @media (min-width: 1245px) {
+`;
 
+const Live = styled.button`
+    font-family: 'Roboto', sans-serif;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background-color: #4D69FA;
+    color: white;
+    border-radius: 25px;
+    margin: 0px 30px 0px 0px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    @media (max-width: 450px) {
+        width: 250px;
+        height: 60px;
+        margin: 0px 0px 30px 0px;
     }
-    @media (min-width: 1025px) {
+`;
 
+const Github = styled.button`
+    font-family: 'Roboto', sans-serif;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background-color: #F35421;
+    color: white;
+    border-radius: 25px;
+    margin: 0px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    @media (max-width: 450px) {
+        width: 250px;
+        height: 60px;
     }
-    @media (min-width: 750px) {
+`;
 
-    }
-    @media (min-width: 600px) {
-
-    }
-    @media (min-width: 500px) {
-
-    }
-    @media (min-width: 400px) {
-
-    }
-    @media (min-width: 300px) {
-
-    } */}
+const Line = styled.div`
+    width: 90%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 40px 0px 40px 0px;
+`;
 
 export default ProjectBreathe;

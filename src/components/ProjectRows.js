@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import test from '../images/test1440.jpg';
 import two_b from '../images/project_breathe/two_b.png';
-import one_g from '../images/gourmet_games/one_g.png';
-import two_m from '../images/gourmet_games/one_g.png';
+import three_g from '../images/gourmet_games/three_g.png';
+import brownies from '../images/fresh-dish/tofu2.png';
 
 function ProjectRows() {
     return (
@@ -22,13 +21,15 @@ function ProjectRows() {
                         </TextBoxParagraph>
                     </RowText>
                     <RowButtons>
+                    <RowLink>
                         <Link to="/project-breathe"><RowButton>Take a look</RowButton></Link>
+                    </RowLink>
                     </RowButtons>
                     </VerticalRow>
                 </Row1>
                 <Row2>
                     <RowImageContainer>
-                    <RowImage src={one_g} alt="test" />
+                    <RowImage src={three_g} alt="test" />
                     </RowImageContainer>
                     <VerticalRow>
                     <RowText>
@@ -38,13 +39,15 @@ function ProjectRows() {
                         </TextBoxParagraph>
                     </RowText>
                     <RowButtons>
+                    <RowLink>
                     <Link to="/gourmet-games"><RowButton>Take a look</RowButton></Link>
+                    </RowLink>
                     </RowButtons>
                     </VerticalRow>
                 </Row2>
                 <Row1>
                     <RowImageContainer>
-                    <RowImage src={two_m} alt="test" />
+                    <RowImage2 src={brownies} alt="test" />
                     </RowImageContainer>
                     <VerticalRow>
                     <RowText>
@@ -55,7 +58,9 @@ function ProjectRows() {
                         </TextBoxParagraph>
                     </RowText>
                     <RowButtons>
+                    <RowLink>
                     <Link to="/fresh-dish"><RowButton>Take a look</RowButton></Link>
+                    </RowLink>
                     </RowButtons>
                     </VerticalRow>
                 </Row1>
@@ -71,7 +76,7 @@ function ProjectRows() {
                 </RowLink>
                 </MobileRow>
                 <MobileRow>
-                <RowImage src={one_g} alt="test" />
+                <RowImage src={three_g} alt="test" />
                 <TextBoxHeading>Play Something New</TextBoxHeading>
                     <TextBoxParagraph>
                         Gamers can't always dedicate all of their time to finding new titles, that's
@@ -82,7 +87,7 @@ function ProjectRows() {
                 </RowLink>
                 </MobileRow>
                 <MobileRow>
-                <RowImage src={two_m} alt="test" />
+                <RowImage2 src={brownies} alt="test" />
                 <TextBoxHeading>Find New Recipes</TextBoxHeading>
                 <TextBoxParagraph>
                     You won't have to worry about eating the same thing over
@@ -123,6 +128,7 @@ const MobileRow = styled.div`
 
 const Row1 = styled.div`
     display: flex;
+    max-width: 1350px;
     width: 100%;
     height: 400px;
     align-items: center;
@@ -160,6 +166,7 @@ const Row2 = styled.div`
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
+    max-width: 1350px;
     height: 400px;
     align-items: center;
     justify-content: center;
@@ -207,6 +214,7 @@ const RowImageContainer = styled.div`
 
 const RowImage = styled.img`
     display: flex;
+    max-width: 800px;
     width: 100%;
     align-items: center;
     height: auto;
@@ -216,6 +224,21 @@ const RowImage = styled.img`
     }
     @media (max-width: 700px) {
         width: 98%;
+    }
+`;
+
+const RowImage2 = styled.img`
+    display: flex;
+    max-width: 900px;
+    width: 85%;
+    align-items: center;
+    height: auto;
+    @media (max-width: 1025px) {
+        width: 80%;
+        margin: 40px 0px;
+    }
+    @media (max-width: 700px) {
+        width: 100%;
     }
 `;
 
@@ -267,6 +290,7 @@ const TextBoxParagraph = styled.h2`
 const VerticalRow = styled.div`
     display: flex;
     flex-direction: column;
+    max-width: 400px;
     width: 30%;
     margin: 0px 20px;
 `;
@@ -275,12 +299,13 @@ const RowButtons = styled.div`
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    height: auto;
+    height: 11px;
     margin: 30px 20px 20px 10px;
 `;
 
 const RowButton = styled.button`
-    width: auto;
+    max-width: 230px;
+    width: 230px;
     height: 50px;
     background-color: rgb(15, 15, 15);
     color: white;
@@ -301,6 +326,9 @@ const RowButton = styled.button`
     &:hover{
         transform: translate(0px, -7.5px);
     }
+    @media (min-width: 1700px) {
+        height: 55px;
+    }
     @media (max-width: 1025px) {
         margin: 20px 0px 0px 0px;
         width: 50%;
@@ -309,6 +337,10 @@ const RowButton = styled.button`
 `;
 
 const RowLink = styled(Link) `
+    @media (min-width: 1026px) {
+        max-width: 500px;
+        max-height: 11px;
+    }
     @media (max-width: 1025px) {
         width: 60%;
     }

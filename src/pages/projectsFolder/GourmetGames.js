@@ -12,15 +12,20 @@ function GourmetGames() {
             <ProjectInnerContainer>
             <ProjectIntro>
                 <IntroImage src={two_g} alt="test"/>
-                <Header>Project Breathe</Header>
-                <Paragraph>After the climax of the Covid-19 pandemic, a vaccine was finally made. People were then left wondering when the world would return back to normal.</Paragraph>
+                <Header>Gourmet Games</Header>
+                <Paragraph>Everyone loves to play a new game but not everyone has the time to go through lists of new and upcoming titles. Gourmet Games is an app that gathers the ratings, reviews, screenshots, and summary of each upcoming, new, and popular title into one clean interface.</Paragraph>
             </ProjectIntro>
             <ProjectMain>
-                    <Paragraph>Each state was moving at a different pace with their vaccinations. To get a better idea we decided to fetch data and monitor everything from new daily cases to the vaccination rate.</Paragraph>
+                    <Paragraph>I decided to use React and Redux for memory management in this app as a way to get familiar with actions and reducers. The game data comes from the RAWG API that updates its game database with new titles every week.</Paragraph>
                     <RowImage src={three_g} alt="test"/>
-                    <Paragraph>And by charting these key metrics we’ll get a clear understanding of the kind of progress each state is making.</Paragraph>
+                    <Paragraph>I styled the app using styled components (so I can keep my css in the jsx) and framer motion for the minimal animations in the app.</Paragraph>
+                    <Line />
                     <CTA>Check Out The Code</CTA>
                     <Paragraph>You can view the live app as well as my code on github below.</Paragraph>
+                    <Links>
+                    <a href="https://github.com/adis-tek" target="_blank"><Live>Live</Live></a>
+                    <a href="https://www.linkedin.com/in/adis-tekesic-a471b6171" target="_blank"><Github>Github</Github></a>
+                    </Links>
             </ProjectMain>
             </ProjectInnerContainer>
         </ProjectContainer>
@@ -34,6 +39,10 @@ const ProjectContainer = styled.div`
     height: auto;
     align-items: center;
     justify-content: center;
+    margin: 0px 0px 60px 0px;
+    @media (max-width: 450px) {
+        margin: 0px 0px 40px 0px;
+    }
 `;
 
 const ProjectInnerContainer = styled.div`
@@ -66,6 +75,7 @@ const ProjectIntro = styled.div`
 `;
 
 const IntroImage = styled.img`
+    max-width: 1000px;
     width: 90%;
     height: auto;
     margin: 40px 50px;
@@ -78,7 +88,7 @@ const IntroImage = styled.img`
 const Header = styled.h1`
     font-size: 40px;
     font-weight: 500;
-    max-width: 800px;
+    max-width: 900px;
     width: 90%;
     @media (max-width: 1025px) {
         font-size: 35px;
@@ -89,7 +99,7 @@ const Header = styled.h1`
 const CTA = styled.h1`
     font-size: 40px;
     font-weight: 500;
-    max-width: 800px;
+    max-width: 900px;
     width: 90%;
     margin: 30px 0px 0px 0px;
     @media (max-width: 1025px) {
@@ -112,7 +122,7 @@ const Paragraph = styled.h2`
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 24px;
-    max-width: 800px;
+    max-width: 900px;
     width: 90%;
     line-height: 1.5;
     margin: 15px 10px 20px 10px;
@@ -144,6 +154,66 @@ const LinksContainer = styled.div`
         height: auto;
         margin: 15px;
     }
+`;
+
+const Links = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 900px;
+    width: 90%;
+    height: auto;
+    margin: 20px 0px 0px 0px;
+    @media (max-width: 450px) {
+        flex-direction: column;
+        margin: 30px 0px 30px 0px;
+    }
+`;
+
+const Live = styled.button`
+    font-family: 'Roboto', sans-serif;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background-color: #4D69FA;
+    color: white;
+    border-radius: 25px;
+    margin: 0px 30px 0px 0px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    @media (max-width: 450px) {
+        width: 250px;
+        height: 60px;
+        margin: 0px 0px 30px 0px;
+    }
+`;
+
+const Github = styled.button`
+    font-family: 'Roboto', sans-serif;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background-color: #F35421;
+    color: white;
+    border-radius: 25px;
+    margin: 0px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    @media (max-width: 450px) {
+        width: 250px;
+        height: 60px;
+    }
+`;
+
+const Line = styled.div`
+    width: 90%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 40px 0px 40px 0px;
 `;
 
 

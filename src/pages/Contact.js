@@ -78,6 +78,7 @@ const Subtitle = styled.h2`
     font-size: 30px;
     margin-bottom: 25px;
     line-height: 1.5;
+    font-weight: 500;
     @media (min-width: 1245px) {
         width: 622px;
     }

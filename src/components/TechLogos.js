@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import icon from '../images/home/icon.png';
 import html from '../images/home/html_icon.png';
 import css from '../images/home/css_icon.png';
@@ -17,23 +17,13 @@ function TechLogos() {
     return (
         <TechLogosSectionContainer>
             <TechLogosSection>
-                <LogosRoll
-                            as={motion.div}
-                            animate={{x: [0, -1035] }}
-                            transition={{ 
-                                repeat: Infinity,
-                                repeatType: "loop",
-                                duration: 12,
-                                ease: "linear",
-                            }}>
-                    <Logo src={vs} />
+                <LogosRoll>
+                    <Logo src={js} />
                     <Logo src={style} />
                     <Logo src={react} />
                     <Logo src={sass} />
                     <Logo src={redux} />
                     <Logo src={framer} />
-                    <Logo src={js} />
-                    <Logo src={github} />
                 </LogosRoll>
             </TechLogosSection>
         </TechLogosSectionContainer>
@@ -45,7 +35,8 @@ const TechLogosSectionContainer = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 300px;
+    height: auto;
+    max-height: 300px;
     align-items: center;
     justify-content: center;
     @media (max-width: 700px) {
@@ -59,58 +50,38 @@ const TechLogosSectionContainer = styled.div`
 const TechLogosSection = styled.div`
     display: flex;
     width: 100%;
-    height: 200px;
+    max-height: 200px;
+    height: auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     align-self: center;
     overflow: hidden;
     border-radius: 6px;
     //border-top: 1px solid rgba(0, 0, 0, 0.2);
     //border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     background-color: white;
-    @media (max-width: 700px) {
-        height: 145px;
-    }
-    @media (max-width: 500px) {
-        height: 100px;
-    }
 `;
 
 const LogosRoll = styled.div`
     display: flex;
-    width: auto;
-    height: 200px;
+    width: 100vw;
+    max-height: 200px;
+    height: auto;
     overflow-x: hidden;
     align-items: center;
-    justify-content: center;
-    @media (max-width: 700px) {
-        height: 145px;
-    }
-    @media (max-width: 500px) {
-        height: 100px;
-    }
-`;
-
-const logoAnimation = keyframes`
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(100%); }
+    justify-content: space-evenly;
 `;
 
 const Logo = styled.img`
     position: relative;
     display: flex;
     width: auto;
-    height: 125px;
+    max-height: 125px;
+    height: auto;
     object-fit: cover;
     align-items: center;
     justify-content: center;
     margin: 0px 40px;
-    @media (max-width: 700px) {
-        height: 145px;
-    }
-    @media (max-width: 500px) {
-        height: 100px;
-    }
 `;
 
 export default TechLogos;

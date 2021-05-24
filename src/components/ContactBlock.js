@@ -34,14 +34,6 @@ function ContactBlock() {
         </Right>
         </InnerContainer>
         <MobileContainer>
-        {/* <ProjectsContainer>
-            <ProjectsHeading>PROJECTS</ProjectsHeading>
-                <Projects>
-                <Link to="gourmet-games"><Project>GOURMET GAMES</Project></Link>
-                <Link to="project-breathe"><Project>PROJECT BREATHE</Project></Link>
-                <Link to="fresh-dish"><Project>FRESH DISH</Project></Link>
-                </Projects>
-        </ProjectsContainer> */}
             <Menu>
                 <Link to="about"><Page>ABOUT</Page></Link>
                 <Link to="contact"><Page>CONTACT</Page></Link>

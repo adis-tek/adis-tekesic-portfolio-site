@@ -47,10 +47,10 @@ const HomeContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
     z-index: 1;
+    margin: 10px 0px 80px 0px;
     @media (max-width: 1025px) {
-        margin-top: 0px;
+        margin: 10px 0px 80px 0px;
     }
 `;
 
@@ -205,22 +205,22 @@ const Hero = styled.div`
     @media (max-width: 500px) {
         flex-direction: column-reverse;
         height: 550px;
-        margin: 50px 0px 0px 0px;
+        margin: 60px 0px 0px 0px;
     }
     @media (max-width: 475px) {
         flex-direction: column-reverse;
         height: 500px;
-        margin: 40px 0px 30px 0px;
+        margin: 60px 0px 0px 0px;
     }
     @media (max-width: 425px) {
         flex-direction: column-reverse;
         height: 500px;
-        margin: 40px 0px 50px 0px;
+        margin: 60px 0px 0px 0px;
     }
     @media (max-width: 350px) {
         flex-direction: column-reverse;
         height: 500px;
-        margin: 40px 0px 80px 0px;
+        margin: 60px 0px 0px 0px;
     }
 `;
 
@@ -305,7 +305,7 @@ const Description = styled.div`
     margin: 0px 20px;
     @media (max-width: 1025px) {
         width: 100%;
-        margin: 20px 5px;
+        margin: 10px 0px 0px 0px;
     }
 `;
 

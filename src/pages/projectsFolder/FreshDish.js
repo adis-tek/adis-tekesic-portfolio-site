@@ -29,8 +29,8 @@ function FreshDish() {
                 <Header>Check Out The Code</Header>
                 <Paragraph>You can view the live app as well as my code on github below.</Paragraph>
                 <Links>
-                <a href="https://github.com/adis-tek" target="_blank"><Live>Live</Live></a>
-                <a href="https://www.linkedin.com/in/adis-tekesic-a471b6171" target="_blank"><Github>Github</Github></a>
+                <a href="https://fresh-dish.vercel.app/" target="_blank"><Live>Live</Live></a>
+                <a href="https://github.com/adis-tek/fresh-dish" target="_blank"><Github>Github</Github></a>
                 </Links>
         </ProjectMain>
         </ProjectInnerContainer>

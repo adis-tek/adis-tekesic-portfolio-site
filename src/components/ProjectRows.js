@@ -120,7 +120,7 @@ const MobileRow = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0px 0px 75px 0px;
+    margin: 45px 0px 45px 0px;
     }
 
 

@@ -95,7 +95,7 @@ function ProjectRows() {
                     cook books.
                 </TextBoxParagraph>
                 <RowLink>
-                <Link to="/gourmet-games"><RowButton>Take a look</RowButton></Link>
+                <Link to="/fresh-dish"><RowButton>Take a look</RowButton></Link>
                 </RowLink>
                 </MobileRow>
             </RowContainer>

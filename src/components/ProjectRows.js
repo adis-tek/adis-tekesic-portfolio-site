@@ -16,8 +16,8 @@ function ProjectRows() {
                     <VerticalRow>
                     <RowText>
                         <TextBoxHeading>Presentation is Everything</TextBoxHeading>
-                        <TextBoxParagraph>Helping the user understand ideas, metrics, and instructions
-                            makes the app easier and fun to use.
+                        <TextBoxParagraph>
+                            An app that helps users understand complex Covid-19 data.
                         </TextBoxParagraph>
                     </RowText>
                     <RowButtons>
@@ -34,7 +34,8 @@ function ProjectRows() {
                     <VerticalRow>
                     <RowText>
                         <TextBoxHeading>Play Something New</TextBoxHeading>
-                        <TextBoxParagraph>Gamers can't always dedicate all of their time to finding new titles, that's
+                        <TextBoxParagraph>
+                            Gamers don't have the time to find new titles, that's
                             why I made an app that finds new games for you.
                         </TextBoxParagraph>
                     </RowText>
@@ -52,7 +53,8 @@ function ProjectRows() {
                     <VerticalRow>
                     <RowText>
                         <TextBoxHeading>Find New Recipes</TextBoxHeading>
-                        <TextBoxParagraph>You won't have to worry about eating the same thing over
+                        <TextBoxParagraph>
+                            You won't have to worry about eating the same thing over
                             and over. Now you can pick a random recipe to try without looking through
                             cook books.
                         </TextBoxParagraph>
@@ -68,8 +70,7 @@ function ProjectRows() {
                 <RowImage src={two_b} />
                 <TextBoxHeading>Presentation is Everything</TextBoxHeading>
                 <TextBoxParagraph>
-                    Helping the user understand ideas, metrics, and instructions
-                    makes the app easier and fun to use.
+                    An app that helps users understand complex Covid-19 data.
                 </TextBoxParagraph>
                 <RowLink>
                 <Link to="/project-breathe"><RowButton>Take a look</RowButton></Link>
@@ -79,8 +80,8 @@ function ProjectRows() {
                 <RowImage src={three_g} />
                 <TextBoxHeading>Play Something New</TextBoxHeading>
                     <TextBoxParagraph>
-                        Gamers can't always dedicate all of their time to finding new titles, that's
-                        why I made an app that finds new games for you.
+                    Gamers don't have the time to find new titles, that's
+                    why I made an app that finds new games for you.
                     </TextBoxParagraph>
                 <RowLink>
                 <Link to="/gourmet-games"><RowButton>Take a look</RowButton></Link>

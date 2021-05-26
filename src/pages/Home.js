@@ -32,7 +32,7 @@ function Home() {
             <Description>
                 <TextBox>
                 <TextBoxHeading>Making Apps That Excite People</TextBoxHeading>
-                <TextBoxParagraph>Putting together code that is more than just an app but a positive experience users can't get enough of.</TextBoxParagraph>
+                <TextBoxParagraph>A great app is just a digital experience users love.</TextBoxParagraph>
                 </TextBox>
             </Description>
             <Image>

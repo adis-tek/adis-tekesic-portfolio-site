@@ -1,11 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import TechLogos from '../components/TechLogos';
 import ProjectRows from '../components/ProjectRows';
-import adis_scooter from '../images/home/adis_scooterPNG.png';
 import three_b from '../images/project_breathe/three_b_edited.png';
 import wide_smile from '../images/home/wide_smile.png';
-import github from '../images/home/github.png';
 import { motion } from "framer-motion";
 import { fadeIn } from "../animation";
 
@@ -23,16 +21,21 @@ function Home() {
             web development a year ago
             and now I make cool apps.
             </Text>
+            <RowLink>
+                <Link to="/contact"><RowButton>Contact Me</RowButton></Link>
+            </RowLink>
             </TextContainer>
             </Message>
         </Intro>
-        {/* <TechLogos /> */}
         <Line />
         <Hero>
             <Description>
                 <TextBox>
                 <TextBoxHeading>Making Apps That Excite People</TextBoxHeading>
                 <TextBoxParagraph>A great app is just a digital experience users love.</TextBoxParagraph>
+                <RowLink>
+                    <Link to="/about"><RowButton>About Me</RowButton></Link>
+                </RowLink>
                 </TextBox>
             </Description>
             <Image>
@@ -78,11 +81,17 @@ const Memoji = styled.img`
 const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
     max-width: 500px;
+    margin: 0px 0px 55px 0px;
+    align-items: flex-start;
+    @media (max-width: 1025px) {
+        align-items: center;
+        margin: 30px 0px 0px 0px;
+    }
 `;
 
 const HeadingText = styled.h1`
+    width: 100%;
     margin-bottom: 20px;
     font-style: normal;
     font-weight: normal;
@@ -151,11 +160,6 @@ const Message = styled.div`
         flex-direction: column;
         margin-top: 10px;
     }
-`;
-
-const IntroBackground = styled.div`
-    position: relative;
-    background-color: blue;
 `;
 
 const Intro = styled.div`
@@ -228,86 +232,21 @@ const Hero = styled.div`
     }
 `;
 
-const BottomContact = styled.div`
-    position: absolute;
-    font-family: 'Quicksand', sans-serif;
-    letter-spacing: 0.1rem;
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    width: 60vw;
-    height: 40px;
-    border-top: 1px solid rgba(5, 5, 5, 0.1);
-    border-bottom: 1px solid rgba(5, 5, 5, 0.1);
-    bottom: 100px;
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px rgba(5, 5, 5, 1);
-`;
-
-const Comment = styled.div`
-    display: flex;
-    width: 33%;
-    border-right: 1px solid rgba(5, 5, 5, 0.1);
-    align-items: center;
-    justify-content: center;
-    margin-right: 40px;
-    margin-left: 40px;
-    
-`;
-
-const CommentText = styled.h2`
-    width: 100%;
-    margin-right: 20px;
-    text-align: center;
-    font-size: 13px;
-`;
-
-const Email = styled.div`
-    position: relative;
-    display: flex;
-    width: 33%;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    text-align: center;
-`;
-
-const SocialMedia = styled.div`
-    position: relative;
-    right: 0px;
-    display: flex;
-    width: 20%;
-    align-items: center;
-    justify-content: center;
-    border-left: 1px solid rgba(5, 5, 5, 0.1);
-`;
-
-const Github = styled.img`
-    width: 17px;
-    height: auto;
-    object-fit: cover;
-    justify-self: center;
-    align-self: center;
-    margin-right: 20px;
-`;
-
-const LinkedIn = styled.img`
-    width: 17px;
-    height: auto;
-    object-fit: cover;
-`;
 
 const Description = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     align-self: center;
     width: 30%;
     height: auto;
     margin: 0px 20px;
     @media (max-width: 1025px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
         width: 100%;
         margin: 10px 0px 0px 0px;
     }
@@ -321,6 +260,7 @@ const TextBox = styled.div`
     padding-left: 10px;
     @media (max-width: 1025px) {
         width: 100%;
+        align-items: center;
     }
 `;
 
@@ -344,32 +284,17 @@ const TextBoxParagraph = styled.h2`
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 400;
+    margin: 0px 0px 12.5px 0px;
     @media (max-width: 1025px) {
         line-height: 32px;
         font-size: 22px;
         width: 60%;
         align-self: center;
+        margin: 0px 0px 5px 0px;
     }
     @media (max-width: 525px) {
         width: 80%;
     }
-`;
-
-const Avatar = styled.div`
-    display: flex;
-    align-items: center;
-    height: 100%;
-    z-index: 0;
-    width: 3%;
-`;
-
-const Scooter = styled.img`
-    position: relative;
-    z-index: 1;
-    height: auto;
-    width: 20vw;
-    top: 55px;
-    left: 20px;
 `;
 
 const Image = styled.div`
@@ -395,6 +320,53 @@ const AppImage = styled.img`
     }
     @media (max-width: 700px) {
         width: 98%;
+    }
+`;
+
+const RowButton = styled.button`
+    max-width: 230px;
+    width: 230px;
+    height: 50px;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 0px;
+    text-align: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    //box-shadow: 5px 6px 7px rgba(5, 5, 5, 0.3);
+    letter-spacing: 1.5px;
+    padding: 1.2rem 3.6rem;
+    transition: all 0.5s ease;
+    margin: 17.5px 0px;
+    cursor: pointer;
+    &:hover{
+        transform: translate(0px, -7.5px);
+    }
+    @media (min-width: 1700px) {
+        height: 55px;
+    }
+    @media (max-width: 1025px) {
+        margin: 30px 0px 0px 0px;
+        width: 50%;
+        min-width: 200px;
+        width: 250px;
+    }
+`;
+
+const RowLink = styled(Link) `
+    @media (min-width: 1026px) {
+        max-width: 500px;
+        max-height: 11px;
+    }
+    @media (max-width: 1025px) {
+        width: 60%;
+    }
+    @media (max-width: 525px) {
+        width: 80%;
     }
 `;
 

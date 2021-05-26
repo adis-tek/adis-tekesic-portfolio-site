@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import github from '../images/footer/github.svg';
 import linkedIn from '../images/footer/linkedin.svg';
 import { Link } from 'react-router-dom';
-import wp from '../pdf/Exacaster_Telco_White_Paper.pdf';
+import resume from '../pdf/Adis_Tekesic.pdf';
 
 function ContactBlock() {
     return (
@@ -27,7 +27,7 @@ function ContactBlock() {
             <Menu>
                 <Link to="about"><Page>ABOUT</Page></Link>
                 <Link to="contact"><Page>CONTACT</Page></Link>
-                <a id="li" href={wp}>Resume<Page>RESUME</Page></a>
+                <a id="li" href={resume}>Resume<Page>RESUME</Page></a>
             </Menu>
         <SignatureContainer>
         <Signature>Designed & Developed by Adis Tekesic</Signature>
@@ -38,7 +38,7 @@ function ContactBlock() {
             <Menu>
                 <Link to="about"><Page>ABOUT</Page></Link>
                 <Link to="contact"><Page>CONTACT</Page></Link>
-                <a id="li" href={wp}>Resume<Page>RESUME</Page></a>
+                <a id="li" href={resume}>Resume<Page>RESUME</Page></a>
             </Menu>
             <SocialIcons>
                 <a href="https://github.com/adis-tek" target="_blank"><Icon href="https://github.com/adis-tek" src={github} alt="github" /></a>

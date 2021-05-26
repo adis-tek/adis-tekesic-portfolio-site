@@ -16,8 +16,7 @@ function About() {
         <AboutContainer>
             <Type src={type} alt="type" />
             <Header>Why Code?</Header>
-            <Main>After writing a whitepaper, selling expensive software, and even starting up a handful of online brands, I thought I’d put it all together and learn how to code.</Main>
-            <Main>Some past ventures worked out better than others but if I could put them all together, maybe, just maybe I could do more.</Main>
+            <Main>After selling expensive software, writing whitepapers, and even starting up a handful of online brands, I thought I’d put it all together and learn how to code.</Main>
             <Main>Front-end development is the perfect role for polymaths. The design, content, and code all must be 10/10.</Main>
                 <IconSection>
                     <Paragraph>
@@ -41,7 +40,7 @@ function About() {
                     <Icon src={speaker} alt="conversation box" />
                     <Text>Excellent communication leads to more people talking about you. Ideas are like viruses and the good ones spread far and fast. And since everyone and everything nowadays is a brand, excellent communication is what the world needs the most.</Text>
                 </MobileIconSection>
-            <Main>By combining things like brisk writing, intuitive UI design, eye-catching graphics, and combining it all with code makes for a website that gives each user a memorable experience that really hits the bullseye.</Main>
+            <Main>By coding together clean writing, intuitive UI design, and eye-catching graphics you're bound to create a memorable experience that really hits the bullseye.</Main>
             <Main>Also, if you'd like to read the whitepaper I mentioned you can do so <a href={wp}><Highlight>here.</Highlight></a></Main>
         </AboutContainer>
         </motion.div>

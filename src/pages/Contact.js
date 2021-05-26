@@ -11,7 +11,7 @@ function Contact() {
         <ContactContainer>
             <Mail src={mail} alt="mail" />
             <Header>Let's Talk!</Header>
-            <Subtitle>I'm currently look for a fun place to work at. You can  <a href={resume}><Highlight1>email</Highlight1></a> me or you can send me a message on <a href="https://www.linkedin.com/in/adis-tekesic-a471b6171"><Highlight2>LinkedIn</Highlight2></a>.</Subtitle>
+            <Subtitle>I'm currently look for a fun place to work at. You can  <a href={resume}><Highlight1>email</Highlight1></a> me or you can send me a message on <a href="https://www.linkedin.com/in/adis-tekesic/"><Highlight2>LinkedIn</Highlight2></a>.</Subtitle>
         </ContactContainer>
     </motion.div>
     )

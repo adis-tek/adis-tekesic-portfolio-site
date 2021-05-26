@@ -20,7 +20,7 @@ function ContactBlock() {
         </ProjectsContainer>
         <SocialIcons>
         <a href="https://github.com/adis-tek" target="_blank"><Icon href="https://github.com/adis-tek" src={github} alt="github" /></a>
-        <a href="https://www.linkedin.com/in/adis-tekesic-a471b6171" target="_blank"><Icon src={linkedIn} alt="linkedIn" /></a>
+        <a href="https://www.linkedin.com/in/adis-tekesic/" target="_blank"><Icon src={linkedIn} alt="linkedIn" /></a>
         </SocialIcons>
         </Left>
         <Right>
@@ -42,7 +42,7 @@ function ContactBlock() {
             </Menu>
             <SocialIcons>
                 <a href="https://github.com/adis-tek" target="_blank"><Icon href="https://github.com/adis-tek" src={github} alt="github" /></a>
-                <a href="https://www.linkedin.com/in/adis-tekesic-a471b6171" target="_blank"><Icon src={linkedIn} alt="linkedIn" /></a>
+                <a href="https://www.linkedin.com/in/adis-tekesic/" target="_blank"><Icon src={linkedIn} alt="linkedIn" /></a>
             </SocialIcons>
             <SignatureContainer>
                 <Signature>Designed & Developed<br></br>by Adis Tekesic</Signature>

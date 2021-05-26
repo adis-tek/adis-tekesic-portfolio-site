@@ -185,7 +185,7 @@ const MenuInnerContainer = styled.div`
     position: relative;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
+    margin: 20px 0px 80px 0px;
 `;
 
 const MenuItem = styled.h2`

@@ -6,9 +6,12 @@ import adis_scooter from '../images/home/adis_scooterPNG.png';
 import three_b from '../images/project_breathe/three_b_edited.png';
 import wide_smile from '../images/home/wide_smile.png';
 import github from '../images/home/github.png';
+import { motion } from "framer-motion";
+import { fadeIn } from "../animation";
 
 function Home() {
     return (
+<motion.div variants={fadeIn} initial="hidden" animate="show">
     <HomeContainer>
         <Intro>
             <Message>
@@ -39,6 +42,7 @@ function Home() {
         <Line2 />
         <ProjectRows />
     </HomeContainer>
+</motion.div>
     );
 };
 

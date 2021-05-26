@@ -1,14 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import mail from '../images/contact/mail.png';
+import { motion } from "framer-motion";
+import { fadeIn } from "../animation";
 
 function Contact() {
     return (
+    <motion.div variants={fadeIn} initial="hidden" animate="show">
         <ContactContainer>
             <Mail src={mail} alt="mail" />
             <Header>Let's Talk!</Header>
             <Subtitle>I'm currently look for a fun place to work at. You can  <Highlight1>email</Highlight1> me or you can send me a message on <Highlight2>LinkedIn</Highlight2>.</Subtitle>
         </ContactContainer>
+    </motion.div>
     )
 }
 

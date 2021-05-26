@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import two_b from '../images/project_breathe/two_b.png';
 import three_g from '../images/gourmet_games/three_g.png';
-import brownies from '../images/fresh-dish/tofu2.png';
+import tofu from '../images/fresh-dish/tofu2.png';
 
 function ProjectRows() {
     return (
@@ -11,7 +11,7 @@ function ProjectRows() {
             <RowContainer>
                 <Row1>
                     <RowImageContainer>
-                    <RowImage src={two_b} alt="test" />
+                    <RowImage src={two_b} />
                     </RowImageContainer>
                     <VerticalRow>
                     <RowText>
@@ -29,7 +29,7 @@ function ProjectRows() {
                 </Row1>
                 <Row2>
                     <RowImageContainer>
-                    <RowImage src={three_g} alt="test" />
+                    <RowImage src={three_g} />
                     </RowImageContainer>
                     <VerticalRow>
                     <RowText>
@@ -47,7 +47,7 @@ function ProjectRows() {
                 </Row2>
                 <Row1>
                     <RowImageContainer>
-                    <RowImage2 src={brownies} alt="test" />
+                    <RowImage2 src={tofu} />
                     </RowImageContainer>
                     <VerticalRow>
                     <RowText>
@@ -65,7 +65,7 @@ function ProjectRows() {
                     </VerticalRow>
                 </Row1>
                 <MobileRow>
-                <RowImage src={two_b} alt="test" />
+                <RowImage src={two_b} />
                 <TextBoxHeading>Presentation is Everything</TextBoxHeading>
                 <TextBoxParagraph>
                     Helping the user understand ideas, metrics, and instructions
@@ -76,7 +76,7 @@ function ProjectRows() {
                 </RowLink>
                 </MobileRow>
                 <MobileRow>
-                <RowImage src={three_g} alt="test" />
+                <RowImage src={three_g} />
                 <TextBoxHeading>Play Something New</TextBoxHeading>
                     <TextBoxParagraph>
                         Gamers can't always dedicate all of their time to finding new titles, that's
@@ -87,7 +87,7 @@ function ProjectRows() {
                 </RowLink>
                 </MobileRow>
                 <MobileRow>
-                <RowImage2 src={brownies} alt="test" />
+                <RowImage2 src={tofu} />
                 <TextBoxHeading>Find New Recipes</TextBoxHeading>
                 <TextBoxParagraph>
                     You won't have to worry about eating the same thing over
@@ -120,7 +120,7 @@ const MobileRow = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 45px 0px 45px 0px;
+    margin: 0px 0px 120px 0px;
     }
 
 
@@ -139,26 +139,19 @@ const Row1 = styled.div`
         display: none;
         flex-direction: column;
         height: 700px;
-        margin: 0px 0px;
-    }
-    @media (max-width: 900px) {
-        margin: 0px 0px;
+        margin: 0px 0px 50px 0px;
     }
     @media (max-width: 800px) {
         height: 600px;
-        margin: 0px 0px;
     }
     @media (max-width: 700px) {
         height: 600px;
-        margin: 0px 0px;
     }
     @media (max-width: 600px) {
         height: 550px;
-        margin: 0px 0px;
     }
     @media (max-width: 475px) {
         height: 500px;
-        margin: 0px 0px;
     }
 `;
 
@@ -171,31 +164,24 @@ const Row2 = styled.div`
     align-items: center;
     justify-content: center;
     background-color: white;
-    margin: 40px 0px;
+    margin: 40px 0px 60px 0;
     @media (max-width: 1025px) {
         display: none;
         flex-direction: column;
         height: 700px;
-        margin: 0px 0px;
-    }
-    @media (max-width: 900px) {
-        margin: 0px 0px;
+        margin: 0px 0px 50px 0px;
     }
     @media (max-width: 800px) {
         height: 600px;
-        margin: 0px 0px;
     }
     @media (max-width: 700px) {
         height: 600px;
-        margin: 0px 0px;
     }
     @media (max-width: 600px) {
         height: 550px;
-        margin: 0px 0px;
     }
     @media (max-width: 475px) {
         height: 500px;
-        margin: 0px 0px;
     }
 `;
 
@@ -220,7 +206,7 @@ const RowImage = styled.img`
     height: auto;
     @media (max-width: 1025px) {
         width: 98%;
-        margin: 40px 0px;
+        margin: 0px 0px 40px 0px;
     }
     @media (max-width: 700px) {
         width: 98%;
@@ -238,7 +224,7 @@ const RowImage2 = styled.img`
         margin: 40px 0px;
     }
     @media (max-width: 700px) {
-        width: 100%;
+        width: 95%;
     }
 `;
 

@@ -5,9 +5,14 @@ import dart from '../images/about/dart.png';
 import coin from '../images/about/coin.png';
 import speaker from '../images/about/speaker.png';
 import arrow from '../images/about/arrow.png';
+import { Link } from 'react-router-dom';
+import wp from '../pdf/Exacaster_Telco_White_Paper.pdf';
+import { motion } from "framer-motion";
+import { fadeIn } from "../animation";
 
 function About() {
     return (
+        <motion.div variants={fadeIn} initial="hidden" animate="show">
         <AboutContainer>
             <Type src={type} alt="type" />
             <Header>Why Code?</Header>
@@ -37,7 +42,9 @@ function About() {
                     <Text>Excellent communication leads to more people talking about you. Ideas are like viruses and the good ones spread far and fast. And since everyone and everything nowadays is a brand, excellent communication is what the world needs the most.</Text>
                 </MobileIconSection>
             <Main>By combining things like brisk writing, intuitive UI design, eye-catching graphics, and combining it all with code makes for a website that gives each user a memorable experience that really hits the bullseye.</Main>
+            <Main>Also, if you'd like to read the whitepaper I mentioned you can do so <a href={wp}><Highlight>here.</Highlight></a></Main>
         </AboutContainer>
+        </motion.div>
     )
 }
 
@@ -256,6 +263,11 @@ const ContactMe = styled.button`
     }
     @media (min-width: 1245px) {
     }
+`;
+
+const Highlight = styled.span`
+    color: #4D69FA;
+    text-decoration: underline;
 `;
 
 export default About;

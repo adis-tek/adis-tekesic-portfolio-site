@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import disableScroll from 'disable-scroll';
-import wp from '../pdf/Exacaster_Telco_White_Paper.pdf';
+import resume from '../pdf/Adis_Tekesic.pdf';
 
 const  Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -58,7 +58,7 @@ const  Nav = () => {
             <MenuInnerContainer>
             <Link onClick={MenuToggle} to="about"><MenuItem>ABOUT</MenuItem></Link>
             <Link onClick={MenuToggle} to="contact"><MenuItem>CONTACT</MenuItem></Link>
-            <a onClick={MenuToggle} href={wp}><MenuItem>RESUME</MenuItem></a>
+            <a onClick={MenuToggle} href={resume}><MenuItem>RESUME</MenuItem></a>
             </MenuInnerContainer>
         </Menu>
     } 
@@ -80,7 +80,7 @@ const  Nav = () => {
                 </Link>
             </li>
             <li>
-                <a id="li" href={wp}>
+                <a id="li" href={resume}>
                     Resume
                 </a>
             </li>

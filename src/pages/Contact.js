@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import mail from '../images/contact/mail.png';
 import { motion } from "framer-motion";
 import { fadeIn } from "../animation";
+import resume from '../pdf/Adis_Tekesic.pdf';
 
 function Contact() {
     return (
@@ -10,7 +11,7 @@ function Contact() {
         <ContactContainer>
             <Mail src={mail} alt="mail" />
             <Header>Let's Talk!</Header>
-            <Subtitle>I'm currently look for a fun place to work at. You can  <Highlight1>email</Highlight1> me or you can send me a message on <Highlight2>LinkedIn</Highlight2>.</Subtitle>
+            <Subtitle>I'm currently look for a fun place to work at. You can  <a href={resume}><Highlight1>email</Highlight1></a> me or you can send me a message on <a href="https://www.linkedin.com/in/adis-tekesic-a471b6171"><Highlight2>LinkedIn</Highlight2></a>.</Subtitle>
         </ContactContainer>
     </motion.div>
     )

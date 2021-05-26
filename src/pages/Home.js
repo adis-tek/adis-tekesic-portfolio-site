@@ -21,7 +21,7 @@ function Home() {
             <Text>
             I started teaching myself front-end
             web development a year ago
-            and now I make cool apps
+            and now I make cool apps.
             </Text>
             </TextContainer>
             </Message>

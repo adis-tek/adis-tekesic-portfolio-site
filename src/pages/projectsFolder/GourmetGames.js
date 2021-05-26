@@ -5,9 +5,12 @@ import one_g from '../../images/gourmet_games/one_g.png';
 import two_g from '../../images/gourmet_games/two_g.png';
 import three_g from '../../images/gourmet_games/three_g.png';
 import four_g from '../../images/gourmet_games/four_g.png';
+import { motion } from "framer-motion";
+import { fadeIn } from "../../animation";
 
 function GourmetGames() {
     return (
+    <motion.div variants={fadeIn} initial="hidden" animate="show">
         <ProjectContainer>
             <ProjectInnerContainer>
             <ProjectIntro>
@@ -29,6 +32,7 @@ function GourmetGames() {
             </ProjectMain>
             </ProjectInnerContainer>
         </ProjectContainer>
+    </motion.div>
     );
 };
 

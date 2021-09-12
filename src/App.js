@@ -11,6 +11,9 @@ import GourmetGames from "./pages/projectsFolder/GourmetGames";
 import FreshDish from "./pages/projectsFolder/FreshDish";
 import ContactBlock from './components/ContactBlock';
 import ScrollToTop from './components/ScrollToTop';
+import ArchStudio from "./pages/projectsFolder/ArchStudio";
+import Designo from "./pages/projectsFolder/Designo";
+import Audiophile from "./pages/projectsFolder/Audiophile";
 
 
 function App() {
@@ -41,6 +44,15 @@ function App() {
             </Route>
             <Route path="/fresh-dish">
               <FreshDish />
+            </Route>
+            <Route path="/arch-studio">
+              <ArchStudio />
+            </Route>
+            <Route path="/designo">
+              <Designo />
+            </Route>
+            <Route path="/audiophile">
+              <Audiophile />
             </Route>
         </Switch>
         </ScrollToTop>

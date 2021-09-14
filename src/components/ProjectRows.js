@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import two_b from '../images/project_breathe/two_b.png';
 import three_g from '../images/gourmet_games/three_g.png';
 import tofu from '../images/fresh-dish/tofu2.png';
+import audiophile from '../images/home/audiophile_screenshot.png';
+import designo from '../images/home/designo_screenshot2.png';
+import arch_studio from '../images/home/arch_studio_screenshot.png';
 
 function ProjectRows() {
     return (
@@ -66,6 +69,61 @@ function ProjectRows() {
                     </RowButtons>
                     </VerticalRow>
                 </Row1>
+                <Row1>
+                    <RowImageContainer>
+                    <RowImage src={audiophile} />
+                    </RowImageContainer>
+                    <VerticalRow>
+                    <RowText>
+                        <TextBoxHeading>Audiophile Central</TextBoxHeading>
+                        <TextBoxParagraph>
+                        For all your listening needs visit this eccomerce store dedicated to
+                    top-notch audio tech.
+                        </TextBoxParagraph>
+                    </RowText>
+                    <RowButtons>
+                    <RowLink>
+                        <Link to="/audiophile"><RowButton>Take a look</RowButton></Link>
+                    </RowLink>
+                    </RowButtons>
+                    </VerticalRow>
+                </Row1>
+                <Row2>
+                    <RowImageContainer>
+                    <RowImage src={designo} />
+                    </RowImageContainer>
+                    <VerticalRow>
+                    <RowText>
+                        <TextBoxHeading>Award-Winning Designs</TextBoxHeading>
+                        <TextBoxParagraph>
+                        Check out this design agency for all your design needs. From packaging to websites; they do it all.
+                        </TextBoxParagraph>
+                    </RowText>
+                    <RowButtons>
+                    <RowLink>
+                    <Link to="/designo"><RowButton>Take a look</RowButton></Link>
+                    </RowLink>
+                    </RowButtons>
+                    </VerticalRow>
+                </Row2>
+                <Row1>
+                    <RowImageContainer>
+                    <RowImage src={arch_studio} />
+                    </RowImageContainer>
+                    <VerticalRow>
+                    <RowText>
+                        <TextBoxHeading>Architects Are a Tap Away</TextBoxHeading>
+                        <TextBoxParagraph>
+                        See this architect agency for pristine architecture designs.
+                        </TextBoxParagraph>
+                    </RowText>
+                    <RowButtons>
+                    <RowLink>
+                        <Link to="/arch-studio"><RowButton>Take a look</RowButton></Link>
+                    </RowLink>
+                    </RowButtons>
+                    </VerticalRow>
+                </Row1>
                 <MobileRow>
                 <RowImage src={two_b} />
                 <TextBoxHeading>Presentation is Everything</TextBoxHeading>
@@ -97,6 +155,37 @@ function ProjectRows() {
                 </TextBoxParagraph>
                 <RowLink>
                 <Link to="/fresh-dish"><RowButton>Take a look</RowButton></Link>
+                </RowLink>
+                </MobileRow>
+                <MobileRow>
+                <RowImage2 src={audiophile} />
+                <TextBoxHeading>Audiophile Central</TextBoxHeading>
+                <TextBoxParagraph>
+                    For all your listening needs visit this eccomerce store dedicated to
+                    top-notch audio tech.
+                </TextBoxParagraph>
+                <RowLink>
+                <Link to="/audiophile"><RowButton>Take a look</RowButton></Link>
+                </RowLink>
+                </MobileRow>
+                <MobileRow>
+                <RowImage2 src={designo} />
+                <TextBoxHeading>Award-Winning Designs</TextBoxHeading>
+                <TextBoxParagraph>
+                    Check out this design agency for all your design needs. From packaging to websites; they do it all.
+                </TextBoxParagraph>
+                <RowLink>
+                <Link to="/designo"><RowButton>Take a look</RowButton></Link>
+                </RowLink>
+                </MobileRow>
+                <MobileRow>
+                <RowImage2 src={arch_studio} />
+                <TextBoxHeading>Architects Are a Tap Away</TextBoxHeading>
+                <TextBoxParagraph>
+                    See this architect agency for pristine architecture designs.
+                </TextBoxParagraph>
+                <RowLink>
+                <Link to="/arch-studio"><RowButton>Take a look</RowButton></Link>
                 </RowLink>
                 </MobileRow>
             </RowContainer>

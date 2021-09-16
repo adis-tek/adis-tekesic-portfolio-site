@@ -5,7 +5,7 @@ import two_b from '../images/project_breathe/two_b.png';
 import three_g from '../images/gourmet_games/three_g.png';
 import tofu from '../images/fresh-dish/tofu2.png';
 import audiophile from '../images/home/audiophile_screenshot.png';
-import designo from '../images/home/designo_screenshot2.png';
+import designo from '../images/home/designo_screenshot.png';
 import arch_studio from '../images/home/arch_studio_screenshot.png';
 
 function ProjectRows() {
@@ -69,7 +69,7 @@ function ProjectRows() {
                     </RowButtons>
                     </VerticalRow>
                 </Row1>
-                <Row1>
+                <Row2Large>
                     <RowImageContainer>
                     <RowImage src={audiophile} />
                     </RowImageContainer>
@@ -87,8 +87,8 @@ function ProjectRows() {
                     </RowLink>
                     </RowButtons>
                     </VerticalRow>
-                </Row1>
-                <Row2>
+                </Row2Large>
+                <Row1Large>
                     <RowImageContainer>
                     <RowImage src={designo} />
                     </RowImageContainer>
@@ -105,8 +105,8 @@ function ProjectRows() {
                     </RowLink>
                     </RowButtons>
                     </VerticalRow>
-                </Row2>
-                <Row1>
+                </Row1Large>
+                <Row2Large>
                     <RowImageContainer>
                     <RowImage src={arch_studio} />
                     </RowImageContainer>
@@ -123,7 +123,7 @@ function ProjectRows() {
                     </RowLink>
                     </RowButtons>
                     </VerticalRow>
-                </Row1>
+                </Row2Large>
                 <MobileRow>
                 <RowImage src={two_b} />
                 <TextBoxHeading>Presentation is Everything</TextBoxHeading>
@@ -246,6 +246,65 @@ const Row1 = styled.div`
 `;
 
 const Row2 = styled.div`
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    max-width: 1350px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 40px 0px 60px 0;
+    @media (max-width: 1025px) {
+        display: none;
+        flex-direction: column;
+        height: 700px;
+        margin: 0px 0px 50px 0px;
+    }
+    @media (max-width: 800px) {
+        height: 600px;
+    }
+    @media (max-width: 700px) {
+        height: 600px;
+    }
+    @media (max-width: 600px) {
+        height: 550px;
+    }
+    @media (max-width: 475px) {
+        height: 500px;
+    }
+`;
+
+const Row1Large = styled.div`
+    display: flex;
+    max-width: 1350px;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 400px 0px 400px 0px;
+    @media (max-width: 1025px) {
+        display: none;
+        flex-direction: column;
+        height: 700px;
+        margin: 0px 0px 50px 0px;
+    }
+    @media (max-width: 800px) {
+        height: 600px;
+    }
+    @media (max-width: 700px) {
+        height: 600px;
+    }
+    @media (max-width: 600px) {
+        height: 550px;
+    }
+    @media (max-width: 475px) {
+        height: 500px;
+    }
+`;
+
+const Row2Large = styled.div`
     display: flex;
     flex-direction: row-reverse;
     width: 100%;

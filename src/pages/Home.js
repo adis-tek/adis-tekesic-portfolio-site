@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import ProjectRows from '../components/ProjectRows';
+import WebScrapers from '../components/WebScrapers';
 import three_b from '../images/project_breathe/three_b_edited.png';
 import wide_smile from '../images/home/wide_smile.png';
 import { motion } from "framer-motion";
@@ -44,6 +45,7 @@ function Home() {
         </Hero>
         <Line2 />
         <ProjectRows />
+        <WebScrapers />
     </HomeContainer>
 </motion.div>
     );

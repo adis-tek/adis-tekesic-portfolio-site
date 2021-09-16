@@ -11,9 +11,10 @@ import arch_studio from '../images/home/arch_studio_screenshot.png';
 function WebScrapers() {
     return (
         <>
+                <Line />
             <WebScraperHeader>
             <ScraperHeader>Node JS Web Scrapers</ScraperHeader>
-            <ScraperBody></ScraperBody>
+            <ScraperBody>This is some sample text.</ScraperBody>
             </WebScraperHeader>
             <ScraperContainer>
                 <Row2Large>
@@ -27,7 +28,7 @@ function WebScrapers() {
                     </RowText>
                     <RowButtons>
                     <RowLink>
-                        <Link to="/audiophile"><RowButton>Watch Demo</RowButton></Link>
+                        <Link to="/twitter-bot"><RowButton>Watch Demo</RowButton></Link>
                     </RowLink>
                     </RowButtons>
                     </VerticalRow>
@@ -42,7 +43,7 @@ function WebScrapers() {
                     </RowText>
                     <RowButtons>
                     <RowLink>
-                    <Link to="/designo"><RowButton>Watch Demo</RowButton></Link>
+                    <Link to="/reddit-crawler"><RowButton>Watch Demo</RowButton></Link>
                     </RowLink>
                     </RowButtons>
                     </VerticalRow>
@@ -57,7 +58,7 @@ function WebScrapers() {
                     </RowText>
                     <RowButtons>
                     <RowLink>
-                        <Link to="/arch-studio"><RowButton>Watch Demo</RowButton></Link>
+                        <Link to="/instagram-scraper"><RowButton>Watch Demo</RowButton></Link>
                     </RowLink>
                     </RowButtons>
                     </VerticalRow>
@@ -69,7 +70,7 @@ function WebScrapers() {
                     top-notch audio tech.
                 </Paragraph>
                 <RowLink>
-                <Link to="/audiophile"><RowButton>Watch Demo</RowButton></Link>
+                <Link to="/twitter-bot"><RowButton>Watch Demo</RowButton></Link>
                 </RowLink>
                 </MobileRow>
                 <MobileRow>
@@ -78,7 +79,7 @@ function WebScrapers() {
                     Check out this design agency for all your design needs. From packaging to websites; they do it all.
                 </Paragraph>
                 <RowLink>
-                <Link to="/designo"><RowButton>Watch Demo</RowButton></Link>
+                <Link to="/reddit-crawler"><RowButton>Watch Demo</RowButton></Link>
                 </RowLink>
                 </MobileRow>
                 <MobileRow>
@@ -87,13 +88,22 @@ function WebScrapers() {
                     See this architect agency for pristine architecture designs.
                 </Paragraph>
                 <RowLink>
-                <Link to="/arch-studio"><RowButton>Watch Demo</RowButton></Link>
+                <Link to="/instagram-scraper"><RowButton>Watch Demo</RowButton></Link>
                 </RowLink>
                 </MobileRow>
             </ScraperContainer>
         </>
     );
 };
+
+const Line = styled.div`
+    width: 90%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 160px 0px -80px 0px;
+    @media (max-width: 1025px) {
+        margin: 0px 0px 0px 0px;
+    }
+`;
 
 const WebScraperHeader = styled.div`
     position: relative;
@@ -103,13 +113,17 @@ const WebScraperHeader = styled.div`
     justify-content: center;
     width: 100%;
     height: auto;
-    margin: 100px 0px; 
+    margin: 150px 0px 25px 0px; 
+    @media (max-width: 1025px) {
+        margin: 100px 0px 50px 0px;
+    }
 `;
 
 const ScraperHeader = styled.h1`
     position: relative;
     display: block;
     text-align: center;
+    font-size: 36px;
     width: 100%;
     height: auto;
     margin: 0px 0px; 
@@ -120,9 +134,13 @@ const ScraperBody = styled.p`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 28px;
     width: 100%;
     height: auto;
-    margin: 0px 0px; 
+    margin: 15px 0px 30px 0px; 
+    @media (max-width: 1025px) {
+        margin: 15px 0px 0px 0px;
+    }
 `;
 
 const ScraperContainer = styled.div`
@@ -158,7 +176,7 @@ const Row1Large = styled.div`
     display: flex;
     max-width: 1350px;
     width: calc(100% / 3);
-    height: auto;
+    height: 200px;
     align-items: center;
     justify-content: center;
     background-color: white;
@@ -173,7 +191,7 @@ const Row2Large = styled.div`
     flex-direction: row-reverse;
     width: calc(100% / 3);
     max-width: 1350px;
-    height: auto;
+    height: 200px;
     align-items: center;
     justify-content: center;
     background-color: white;

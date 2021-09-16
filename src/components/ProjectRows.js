@@ -286,21 +286,6 @@ const Row1Large = styled.div`
     margin: 400px 0px 400px 0px;
     @media (max-width: 1025px) {
         display: none;
-        flex-direction: column;
-        height: 700px;
-        margin: 0px 0px 50px 0px;
-    }
-    @media (max-width: 800px) {
-        height: 600px;
-    }
-    @media (max-width: 700px) {
-        height: 600px;
-    }
-    @media (max-width: 600px) {
-        height: 550px;
-    }
-    @media (max-width: 475px) {
-        height: 500px;
     }
 `;
 

@@ -14,6 +14,9 @@ import ScrollToTop from './components/ScrollToTop';
 import ArchStudio from "./pages/projectsFolder/ArchStudio";
 import Designo from "./pages/projectsFolder/Designo";
 import Audiophile from "./pages/projectsFolder/Audiophile";
+import TwitterBot from "./pages/projectsFolder/TwitterBot";
+import RedditCrawler from "./pages/projectsFolder/RedditCrawler";
+import InstagramScraper from "./pages/projectsFolder/InstagramScraper";
 
 
 function App() {
@@ -53,6 +56,15 @@ function App() {
             </Route>
             <Route path="/audiophile">
               <Audiophile />
+            </Route>
+            <Route path="/twitter-bot">
+              <TwitterBot />
+            </Route>
+            <Route path="/reddit-crawler">
+              <RedditCrawler />
+            </Route>
+            <Route path="/instagram-scraper">
+              <InstagramScraper />
             </Route>
         </Switch>
         </ScrollToTop>

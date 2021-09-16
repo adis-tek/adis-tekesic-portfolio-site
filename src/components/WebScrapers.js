@@ -111,11 +111,17 @@ const WebScraperHeader = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     height: auto;
     margin: 150px 0px 25px 0px; 
     @media (max-width: 1025px) {
         margin: 100px 0px 50px 0px;
+    }
+    @media (max-width: 525px) {
+    margin: 75px 0px 25px 0px;
+    }
+    @media (max-width: 350px) {
+    margin: 75px 0px 35px 0px;
     }
 `;
 
@@ -127,6 +133,10 @@ const ScraperHeader = styled.h1`
     width: 100%;
     height: auto;
     margin: 0px 0px; 
+    @media (max-width: 525px) {
+    text-align: left;
+    width: 100%;
+    }
 `;
 
 const ScraperBody = styled.p`
@@ -140,6 +150,15 @@ const ScraperBody = styled.p`
     margin: 15px 0px 30px 0px; 
     @media (max-width: 1025px) {
         margin: 15px 0px 0px 0px;
+    }
+    @media (max-width: 525px) {
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    width: 100%;
+    }
+    @media (max-width: 350px) {
+    font-size: 22px;
     }
 `;
 
@@ -161,15 +180,16 @@ const MobileRow = styled.div`
     @media (max-width: 1025px) {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 70%;
     height: auto;
     align-items: center;
     justify-content: center;
     padding: 20px 0px;
-    margin: 0px 0px 120px 0px;
+    margin: 0px 0px 40px 0px;
     }
-
-
+    @media (max-width: 525px) {
+    width: 100%;
+    }
 `;
 
 const Row1Large = styled.div`
@@ -221,14 +241,19 @@ const Heading = styled.h1`
     font-weight: 400;
     margin-bottom: 15px;
     @media (max-width: 1025px) {
-        font-size: 32px;
-        width: 60%;
+        font-size: 40px;
+        width: 100%;
         margin: 7.5px 0px;
+        text-align: center;
         align-self: center;
         padding: 0px 0px 0px 0px;
     }
     @media (max-width: 525px) {
+        text-align: left;
         width: 80%;
+    }
+    @media (max-width: 350px) {
+    font-size: 28px;
     }
 
 `;
@@ -239,14 +264,19 @@ const Paragraph = styled.h2`
     width: 100%;
     font-weight: 400;
     @media (max-width: 1025px) {
-        line-height: 32px;
-        font-size: 22px;
-        width: 60%;
+        line-height: 38px;
+        font-size: 18px;
+        text-align: center;
+        width: 75%;
         margin: 7.5px 0px;
         align-self: center;
     }
     @media (max-width: 525px) {
+        text-align: left;
         width: 80%;
+    }
+    @media (max-width: 350px) {
+    font-size: 16px;
     }
 `;
 
@@ -305,9 +335,16 @@ const RowLink = styled(Link) `
         max-height: 11px;
     }
     @media (max-width: 1025px) {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         width: 60%;
     }
     @media (max-width: 525px) {
+        align-items: flex-start;
+        justify-content: flex-start;
         width: 80%;
     }
 `;

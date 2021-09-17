@@ -15,7 +15,7 @@ function Audiophile() {
             <ProjectInnerContainer>
             <ProjectIntro>
                 <IntroImage src={audiophile_intro} alt="project"/>
-                <Header>Audiophile</Header>
+                <IntroHeader>Audiophile</IntroHeader>
                 <Paragraph>After the climax of the Covid-19 pandemic, a vaccine was finally made. This was a pivotal moment in history since it meant that the world would soon go back to normal.</Paragraph>
             </ProjectIntro>
             <ProjectMain>
@@ -91,6 +91,18 @@ const IntroImage = styled.img`
     @media (max-width: 1025px) {
         width: 105%;
         margin: 0px 50px 20px 50px;
+    }
+`;
+
+const IntroHeader = styled.h1`
+    font-size: 40px;
+    font-weight: 500;
+    max-width: 900px;
+    width: 90%;
+    margin: 0px 0px 10px 0px;
+    @media (max-width: 1025px) {
+        font-size: 35px;
+        margin: 25px 0px 0px 0px;
     }
 `;
 

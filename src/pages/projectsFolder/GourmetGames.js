@@ -15,7 +15,7 @@ function GourmetGames() {
             <ProjectInnerContainer>
             <ProjectIntro>
                 <IntroImage src={two_g} alt="test"/>
-                <Header>Gourmet Games</Header>
+                <IntroHeader>Gourmet Games</IntroHeader>
                 <Paragraph>Everyone loves to play a new game but not everyone has the time to go through lists of new and upcoming titles. Gourmet Games is an app that gathers the ratings, reviews, screenshots, and summary of each upcoming, new, and popular title into one clean interface.</Paragraph>
             </ProjectIntro>
             <ProjectMain>
@@ -86,6 +86,18 @@ const IntroImage = styled.img`
     object-fit: cover;
     @media (max-width: 1025px) {
         margin: 0px 50px;
+    }
+`;
+
+const IntroHeader = styled.h1`
+    font-size: 40px;
+    font-weight: 500;
+    max-width: 900px;
+    width: 90%;
+    margin: 0px 0px 10px 0px;
+    @media (max-width: 1025px) {
+        font-size: 35px;
+        margin: 25px 0px 0px 0px;
     }
 `;
 

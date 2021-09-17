@@ -18,7 +18,7 @@ function FreshDish() {
             <ProjectInnerContainer>
             <ProjectIntro>
                 <IntroImage src={nine_ff} alt="project"/>
-                <Header>Fresh Dish</Header>
+                <IntroHeader>Fresh Dish</IntroHeader>
                 <Paragraph>Cooking the same meals throughout the week can get boring. Fresh Dish is designed to randomly select a recipe for you based on the ingredient you select.</Paragraph>
                 <Paragraph>You’ll never run out of things to cook since new recipes are just a tap away. The recipes come from the TheMealDB API and the app will use a random number as a way to select a random recipe in the ingredient category.</Paragraph>
             </ProjectIntro>
@@ -93,6 +93,18 @@ const IntroImage = styled.img`
     object-fit: cover;
     @media (max-width: 1025px) {
         margin: 0px 50px;
+    }
+`;
+
+const IntroHeader = styled.h1`
+    font-size: 40px;
+    font-weight: 500;
+    max-width: 900px;
+    width: 90%;
+    margin: 0px 0px 10px 0px;
+    @media (max-width: 1025px) {
+        font-size: 35px;
+        margin: 25px 0px 0px 0px;
     }
 `;
 

@@ -13,9 +13,9 @@ function ContactBlock() {
         <ProjectsContainer>
         <ProjectsHeading>PROJECTS</ProjectsHeading>
             <Projects>
-            <Link to="gourmet-games"><Project>GOURMET GAMES</Project></Link>
+            <Link to="audiophile"><Project>AUDIOPHILE</Project></Link>
             <Link to="project-breathe"><Project>PROJECT BREATHE</Project></Link>
-            <Link to="fresh-dish"><Project>FRESH DISH</Project></Link>
+            <Link to="twitter-bot"><Project>TWITTER BOT</Project></Link>
             </Projects>
         </ProjectsContainer>
         <SocialIcons>

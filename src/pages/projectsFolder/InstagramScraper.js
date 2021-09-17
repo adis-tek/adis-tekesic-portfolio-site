@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import test from '../../images/test1440.jpg';
-import two_b from '../../images/project_breathe/two_b.png';
-import three_b from '../../images/project_breathe/three_b.png';
-import four_b from '../../images/project_breathe/four_b.png';
+import InstagramScraperVideo from '../../videos/instagram_scraper.mp4';
 import { motion } from "framer-motion";
 import { fadeIn } from "../../animation";
 
@@ -13,14 +10,15 @@ function InstagramScraper() {
         <ProjectContainer>
             <ProjectInnerContainer>
             <ProjectIntro>
-                <IntroImage src={two_b} alt="project"/>
+            <VideoContainer>
+            <Video width="1920" height="1080" src={InstagramScraperVideo} />
+            </VideoContainer>
                 <Header>Instagram Scraper</Header>
                 <Paragraph>After the climax of the Covid-19 pandemic, a vaccine was finally made. This was a pivotal moment in history since it meant that the world would soon go back to normal.</Paragraph>
             </ProjectIntro>
             <ProjectMain>
                     <Paragraph>Each state was moving at a different pace with their vaccinations. To get a better idea of the progress I decided to fetch data and monitor crucial metrics like new daily cases and the vaccination rate.
     </Paragraph>
-                    <RowImage src={three_b} alt="test"/>
                     <Paragraph>This is a react app that leverages Material-UI’s cards and grid library that creates a neat and responsive layout.  Data is updated daily and fetched from the Covid Act Now API and is then presented on charts (created with the Recharts library) so users can better understand the trend.</Paragraph>
                     <Paragraph>I chose to use the Recharts library for charting the data (it was much easier to use than Material-UI charts).</Paragraph>
                     <Paragraph>The app gives users quick access to new daily data for all fifty states. Data is automatically presented on charts so users can visually see the trends and nine key metrics are collected daily to determine the rate of progress.</Paragraph>
@@ -38,6 +36,28 @@ function InstagramScraper() {
     </motion.div>
     )
 }
+
+const VideoContainer = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: 75%;
+  padding-top: 42.5%;
+  margin: 0px 0px 70px 0px;
+  @media (max-width: 1025px) {
+    width: 90%;
+    padding-top: 51%;
+}
+`;
+
+const Video = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+`;
 
 const ProjectContainer = styled.div`
     display: flex;

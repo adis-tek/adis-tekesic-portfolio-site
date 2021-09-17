@@ -10,7 +10,9 @@ function TwitterBot() {
         <ProjectContainer>
             <ProjectInnerContainer>
             <ProjectIntro>
-            <Video src={TwitterBotVideo} />
+            <VideoContainer>
+            <Video width="1920" height="1080" src={TwitterBotVideo} />
+            </VideoContainer>
                 <Header>Twitter Bot</Header>
                 <Paragraph>After the climax of the Covid-19 pandemic, a vaccine was finally made. This was a pivotal moment in history since it meant that the world would soon go back to normal.</Paragraph>
             </ProjectIntro>
@@ -35,9 +37,26 @@ function TwitterBot() {
     )
 }
 
+const VideoContainer = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: 75%;
+  padding-top: 42.5%;
+  margin: 0px 0px 70px 0px;
+  @media (max-width: 1025px) {
+    width: 90%;
+    padding-top: 51%;
+}
+`;
+
 const Video = styled.iframe`
-    position: relative;
-    display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 `;
 
 const ProjectContainer = styled.div`

@@ -283,7 +283,7 @@ const Row1Large = styled.div`
     align-items: center;
     justify-content: center;
     background-color: white;
-    margin: 400px 0px 300px 0px;
+    margin: 400px 0px 270px 0px;
     @media (max-width: 1200px) {
         margin: 300px 0px 200px 0px;
     }
@@ -301,7 +301,7 @@ const Row2Large = styled.div`
     align-items: center;
     justify-content: center;
     background-color: white;
-    margin: 150px 0px 60px 0;
+    margin: 180px 0px 60px 0;
     @media (max-width: 1025px) {
         display: none;
         flex-direction: column;

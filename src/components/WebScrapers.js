@@ -100,6 +100,7 @@ const Line = styled.div`
     width: 90%;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     margin: 160px 0px -80px 0px;
+    max-width: 1350px;
     @media (max-width: 1025px) {
         margin: 0px 0px 0px 0px;
     }
@@ -175,6 +176,7 @@ const ScraperContainer = styled.div`
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    max-width: 1350px;
     height: auto;
     margin: 0px 0px; 
     @media (max-width: 1025px) {
@@ -304,7 +306,6 @@ const RowButtons = styled.div`
 `;
 
 const RowButton = styled.button`
-    max-width: 230px;
     width: 230px;
     height: 50px;
     background-color: rgb(15, 15, 15);
@@ -327,7 +328,7 @@ const RowButton = styled.button`
         transform: translate(0px, -7.5px);
     }
     @media (min-width: 1700px) {
-        height: 55px;
+        padding: 0rem;
     }
     @media (max-width: 1025px) {
         margin: 20px 0px 0px 0px;

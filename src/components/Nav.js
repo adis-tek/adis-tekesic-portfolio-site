@@ -95,6 +95,7 @@ const  Nav = () => {
 const Navigation = styled.nav`
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 100vw;
     height: 100px;
     margin: 20px 0px;
@@ -214,6 +215,7 @@ const DesktopMenu = styled.div`
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        max-width: 1350px;
     }
 `;
 

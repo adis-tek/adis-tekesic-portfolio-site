@@ -13,8 +13,8 @@ function WebScrapers() {
         <>
                 <Line />
             <WebScraperHeader>
-            <ScraperHeader>Node JS Web Scrapers</ScraperHeader>
-            <ScraperBody>This is some sample text.</ScraperBody>
+            <ScraperHeader>Back-End Node Apps</ScraperHeader>
+            <ScraperBody>A few scrapers and a bot written in Node JS.</ScraperBody>
             </WebScraperHeader>
             <ScraperContainer>
                 <Row2Large>
@@ -151,9 +151,16 @@ const ScraperBody = styled.p`
     @media (max-width: 1025px) {
         margin: 15px 0px 0px 0px;
     }
+    @media (max-width: 700px) {
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    }
     @media (max-width: 525px) {
     align-items: flex-start;
-    justify-content: flex-start;
+    font-size: 24px;
     text-align: left;
     width: 100%;
     }

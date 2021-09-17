@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import test from '../../images/test1440.jpg';
-import two_b from '../../images/project_breathe/two_b.png';
-import three_b from '../../images/project_breathe/three_b.png';
-import four_b from '../../images/project_breathe/four_b.png';
+import TwitterBotVideo from '../../videos/twitter_bot.mp4';
 import { motion } from "framer-motion";
 import { fadeIn } from "../../animation";
 
@@ -13,14 +10,13 @@ function TwitterBot() {
         <ProjectContainer>
             <ProjectInnerContainer>
             <ProjectIntro>
-                <IntroImage src={two_b} alt="project"/>
+            <Video src={TwitterBotVideo} />
                 <Header>Twitter Bot</Header>
                 <Paragraph>After the climax of the Covid-19 pandemic, a vaccine was finally made. This was a pivotal moment in history since it meant that the world would soon go back to normal.</Paragraph>
             </ProjectIntro>
             <ProjectMain>
                     <Paragraph>Each state was moving at a different pace with their vaccinations. To get a better idea of the progress I decided to fetch data and monitor crucial metrics like new daily cases and the vaccination rate.
     </Paragraph>
-                    <RowImage src={three_b} alt="test"/>
                     <Paragraph>This is a react app that leverages Material-UI’s cards and grid library that creates a neat and responsive layout.  Data is updated daily and fetched from the Covid Act Now API and is then presented on charts (created with the Recharts library) so users can better understand the trend.</Paragraph>
                     <Paragraph>I chose to use the Recharts library for charting the data (it was much easier to use than Material-UI charts).</Paragraph>
                     <Paragraph>The app gives users quick access to new daily data for all fifty states. Data is automatically presented on charts so users can visually see the trends and nine key metrics are collected daily to determine the rate of progress.</Paragraph>
@@ -38,6 +34,11 @@ function TwitterBot() {
     </motion.div>
     )
 }
+
+const Video = styled.iframe`
+    position: relative;
+    display: block;
+`;
 
 const ProjectContainer = styled.div`
     display: flex;

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function WebScrapers() {
     return (
         <>
-                <Line />
+            <Line />
             <WebScraperHeader>
             <ScraperHeader>Back-End Node Apps</ScraperHeader>
             <ScraperBody>A few scrapers and a bot written in Node JS.</ScraperBody>
@@ -124,7 +124,7 @@ const ScraperHeader = styled.h1`
     position: relative;
     display: block;
     text-align: center;
-    font-size: 36px;
+    font-size: 40px;
     width: 100%;
     height: auto;
     margin: 0px 0px; 
@@ -139,7 +139,7 @@ const ScraperBody = styled.p`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
+    font-size: 26px;
     width: 100%;
     height: auto;
     margin: 15px 0px 30px 0px; 
@@ -168,7 +168,8 @@ const ScraperContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     max-width: 1350px;
     height: auto;
@@ -241,6 +242,7 @@ const Heading = styled.h1`
     font-family: 'Roboto', sans-serif;
     font-size: 35px;
     width: 100%;
+    text-align: center;
     font-weight: 400;
     margin-bottom: 15px;
     @media (max-width: 1025px) {
@@ -265,6 +267,8 @@ const Paragraph = styled.h2`
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     width: 100%;
+    text-align: center;
+    line-height: 32px;
     font-weight: 400;
     @media (max-width: 1025px) {
         line-height: 38px;
@@ -286,6 +290,8 @@ const Paragraph = styled.h2`
 const VerticalRow = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 400px;
     width: 100%;
     margin: 0px 20px;
@@ -293,13 +299,15 @@ const VerticalRow = styled.div`
 
 const RowButtons = styled.div`
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     height: 11px;
-    margin: 30px 20px 20px 10px;
+    margin: 0px 0px 0px 0px;
 `;
 
 const RowButton = styled.button`
+    position: relative;
+    display: flex;
     width: 230px;
     height: 50px;
     background-color: rgb(15, 15, 15);
@@ -309,6 +317,7 @@ const RowButton = styled.button`
     font-size: 17px;
     border-radius: 0px;
     text-align: center;
+    align-items: center;
     justify-content: center;
     outline: none;
     border: none;
@@ -316,7 +325,7 @@ const RowButton = styled.button`
     letter-spacing: 1.5px;
     padding: 1.2rem 3.6rem;
     transition: all 0.5s ease;
-    margin: 7.5px 10px;
+    margin: 75px 0px 0px 20px;
     cursor: pointer;
     &:hover{
         transform: translate(0px, -7.5px);
@@ -333,8 +342,15 @@ const RowButton = styled.button`
 
 const RowLink = styled(Link) `
     @media (min-width: 1026px) {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
         max-width: 500px;
         max-height: 11px;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
     }
     @media (max-width: 1025px) {
         position: relative;

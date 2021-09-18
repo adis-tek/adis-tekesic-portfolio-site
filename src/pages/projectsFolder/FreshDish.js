@@ -1,12 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import test from '../../images/test1440.jpg';
-import nine_f from '../../images/fresh-dish/nine_f.png';
-import nine_ff from '../../images/fresh-dish/nine_ff.png';
-import four_f from '../../images/fresh-dish/four_f.png';
-import three_f from '../../images/fresh-dish/three_f.png';
-import six_f from '../../images/fresh-dish/six_f.png';
-import eight_f from '../../images/fresh-dish/eight_f.png';
+import fresh_dish_screenshot from '../../images/fresh-dish/fresh_dish_screenshot.png';
 import { motion } from "framer-motion";
 import { fadeIn } from "../../animation";
 
@@ -17,15 +11,13 @@ function FreshDish() {
         <ProjectContainer>
             <ProjectInnerContainer>
             <ProjectIntro>
-                <IntroImage src={nine_ff} alt="project"/>
+                <IntroImage src={fresh_dish_screenshot} alt="project"/>
                 <IntroHeader>Fresh Dish</IntroHeader>
                 <Paragraph>Cooking the same meals throughout the week can get boring. Fresh Dish is designed to randomly select a recipe for you based on the ingredient you select.</Paragraph>
                 <Paragraph>You’ll never run out of things to cook since new recipes are just a tap away. The recipes come from the TheMealDB API and the app will use a random number as a way to select a random recipe in the ingredient category.</Paragraph>
             </ProjectIntro>
             <ProjectMain>
-                    <VerticalImage src={four_f} alt="test"/>
                     <Paragraph>When you find the recipes you want to try, simply add them to your favorites for reference. The favorites page can only be viewed when you’re logged in.</Paragraph>
-                    <RowImage src={six_f} alt="test"/>
                     <Paragraph>The way the app handles authentication is through Firebase and the way the app saves recipes is by using FireStore from Firebase (a lightweight database).</Paragraph>
                     <Paragraph>Along with an interactive and responsive design created using styled components, the app is extremely interactive and responsive on all mobile devices.</Paragraph>
                     <Line />

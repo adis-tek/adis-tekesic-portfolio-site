@@ -1,9 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import test from '../../images/test1440.jpg';
-import two_b from '../../images/project_breathe/two_b.png';
-import three_b from '../../images/project_breathe/three_b.png';
-import four_b from '../../images/project_breathe/four_b.png';
 import designo_intro from '../../images/home/designo_screenshot.png';
 import { motion } from "framer-motion";
 import { fadeIn } from "../../animation";

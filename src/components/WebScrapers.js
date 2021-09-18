@@ -1,12 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import two_b from '../images/project_breathe/two_b.png';
-import three_g from '../images/gourmet_games/three_g.png';
-import tofu from '../images/fresh-dish/tofu2.png';
-import audiophile from '../images/home/audiophile_screenshot.png';
-import designo from '../images/home/designo_screenshot.png';
-import arch_studio from '../images/home/arch_studio_screenshot.png';
 
 function WebScrapers() {
     return (

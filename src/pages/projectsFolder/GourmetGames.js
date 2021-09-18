@@ -1,10 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import test from '../../images/test1440.jpg';
-import one_g from '../../images/gourmet_games/one_g.png';
-import two_g from '../../images/gourmet_games/two_g.png';
-import three_g from '../../images/gourmet_games/three_g.png';
-import four_g from '../../images/gourmet_games/four_g.png';
+import gourmet_games_screenshot from '../../images/gourmet_games/gourmet_games_screenshot.png';
 import { motion } from "framer-motion";
 import { fadeIn } from "../../animation";
 
@@ -14,13 +10,12 @@ function GourmetGames() {
         <ProjectContainer>
             <ProjectInnerContainer>
             <ProjectIntro>
-                <IntroImage src={two_g} alt="test"/>
+                <IntroImage src={gourmet_games_screenshot} alt="test"/>
                 <IntroHeader>Gourmet Games</IntroHeader>
                 <Paragraph>Everyone loves to play a new game but not everyone has the time to go through lists of new and upcoming titles. Gourmet Games is an app that gathers the ratings, reviews, screenshots, and summary of each upcoming, new, and popular title into one clean interface.</Paragraph>
             </ProjectIntro>
             <ProjectMain>
                     <Paragraph>I decided to use React and Redux for memory management in this app as a way to get familiar with actions and reducers. The game data comes from the RAWG API that updates its game database with new titles every week.</Paragraph>
-                    <RowImage src={three_g} alt="test"/>
                     <Paragraph>I styled the app using styled components (so I can keep my css in the jsx) and framer motion for the minimal animations in the app.</Paragraph>
                     <Line />
                     <CTA>Check Out The Code</CTA>

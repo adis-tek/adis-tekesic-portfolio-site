@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import two_b from '../images/project_breathe/two_b.png';
-import three_g from '../images/gourmet_games/three_g.png';
-import tofu from '../images/fresh-dish/tofu2.png';
+import project_breathe_screenshot from '../images/project_breathe/project_breathe_screenshot.png';
+import gourmet_games_screenshot from '../images/gourmet_games/gourmet_games_screenshot.png';
+import fresh_dish_screenshot from '../images/fresh-dish/fresh_dish_screenshot.png';
 import audiophile from '../images/home/audiophile_screenshot.png';
 import designo from '../images/home/designo_screenshot.png';
 import arch_studio from '../images/home/arch_studio_screenshot.png';
@@ -14,7 +14,7 @@ function ProjectRows() {
             <RowContainer>
                 <Row1>
                     <RowImageContainer>
-                    <RowImage src={two_b} />
+                    <RowImage src={project_breathe_screenshot} />
                     </RowImageContainer>
                     <VerticalRow>
                     <RowText>
@@ -32,7 +32,7 @@ function ProjectRows() {
                 </Row1>
                 <Row2>
                     <RowImageContainer>
-                    <RowImage src={three_g} />
+                    <RowImage src={gourmet_games_screenshot} />
                     </RowImageContainer>
                     <VerticalRow>
                     <RowText>
@@ -51,7 +51,7 @@ function ProjectRows() {
                 </Row2>
                 <Row1>
                     <RowImageContainer>
-                    <RowImage2 src={tofu} />
+                    <RowImage2 src={fresh_dish_screenshot} />
                     </RowImageContainer>
                     <VerticalRow>
                     <RowText>
@@ -125,7 +125,7 @@ function ProjectRows() {
                     </VerticalRow>
                 </Row2Large>
                 <MobileRow>
-                <RowImage src={two_b} />
+                <RowImage src={project_breathe_screenshot} />
                 <TextBoxHeading>Presentation is Everything</TextBoxHeading>
                 <TextBoxParagraph>
                     An app that helps users understand complex Covid-19 data.
@@ -135,7 +135,7 @@ function ProjectRows() {
                 </RowLink>
                 </MobileRow>
                 <MobileRow>
-                <RowImage src={three_g} />
+                <RowImage src={gourmet_games_screenshot} />
                 <TextBoxHeading>Play Something New</TextBoxHeading>
                     <TextBoxParagraph>
                     Gamers don't have the time to find new titles, that's
@@ -146,7 +146,7 @@ function ProjectRows() {
                 </RowLink>
                 </MobileRow>
                 <MobileRow>
-                <RowImage2 src={tofu} />
+                <RowImage2 src={fresh_dish_screenshot} />
                 <TextBoxHeading>Find New Recipes</TextBoxHeading>
                 <TextBoxParagraph>
                     You won't have to worry about eating the same thing over

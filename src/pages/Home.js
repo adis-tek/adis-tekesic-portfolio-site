@@ -125,6 +125,7 @@ const Text = styled.h2`
         width: 366px;
         font-size: 25px;
         margin-left: 35px;
+        text-align: center;
 
     }
     @media (max-width: 550px) {

@@ -14,15 +14,11 @@ function RedditCrawler() {
             <Video width="1920" height="1080" src={RedditCrawlerVideo} />
             </VideoContainer>
                 <Header>Reddit Crawler</Header>
-                <Paragraph>After the climax of the Covid-19 pandemic, a vaccine was finally made. This was a pivotal moment in history since it meant that the world would soon go back to normal.</Paragraph>
+                <Paragraph>This is a Reddit bot that takes in a reddit URL and indexes all of the Reddit comments by the amount of upvotes from most to least.</Paragraph>
             </ProjectIntro>
             <ProjectMain>
-                    <Paragraph>Each state was moving at a different pace with their vaccinations. To get a better idea of the progress I decided to fetch data and monitor crucial metrics like new daily cases and the vaccination rate.
-    </Paragraph>
-                    <Paragraph>This is a react app that leverages Material-UI’s cards and grid library that creates a neat and responsive layout.  Data is updated daily and fetched from the Covid Act Now API and is then presented on charts (created with the Recharts library) so users can better understand the trend.</Paragraph>
-                    <Paragraph>I chose to use the Recharts library for charting the data (it was much easier to use than Material-UI charts).</Paragraph>
-                    <Paragraph>The app gives users quick access to new daily data for all fifty states. Data is automatically presented on charts so users can visually see the trends and nine key metrics are collected daily to determine the rate of progress.</Paragraph>
-                    <Paragraph>This was a very simple, one-page card layout of crucial data metrics from all fifty of the states, and memory was managed simply by using the default React hooks.</Paragraph>
+                    <Paragraph>This list is then pushed into column one of the Google spreadsheet.</Paragraph>
+                    <Paragraph>This is a Node JS bot that utilizes the Google Spreadsheets dependency and Puppeteer (to navigate the site).</Paragraph>
                     <Line />
                     <Header>Check Out The Code</Header>
                     <Paragraph>You can view the live app as well as my code on github below.</Paragraph>

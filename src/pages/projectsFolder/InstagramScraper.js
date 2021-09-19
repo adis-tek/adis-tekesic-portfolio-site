@@ -14,15 +14,10 @@ function InstagramScraper() {
             <Video width="1920" height="1080" src={InstagramScraperVideo} />
             </VideoContainer>
                 <Header>Instagram Scraper</Header>
-                <Paragraph>After the climax of the Covid-19 pandemic, a vaccine was finally made. This was a pivotal moment in history since it meant that the world would soon go back to normal.</Paragraph>
+                <Paragraph>This is a Node JS bot that takes an Instagram URL and returns the profile stats. </Paragraph>
             </ProjectIntro>
             <ProjectMain>
-                    <Paragraph>Each state was moving at a different pace with their vaccinations. To get a better idea of the progress I decided to fetch data and monitor crucial metrics like new daily cases and the vaccination rate.
-    </Paragraph>
-                    <Paragraph>This is a react app that leverages Material-UI’s cards and grid library that creates a neat and responsive layout.  Data is updated daily and fetched from the Covid Act Now API and is then presented on charts (created with the Recharts library) so users can better understand the trend.</Paragraph>
-                    <Paragraph>I chose to use the Recharts library for charting the data (it was much easier to use than Material-UI charts).</Paragraph>
-                    <Paragraph>The app gives users quick access to new daily data for all fifty states. Data is automatically presented on charts so users can visually see the trends and nine key metrics are collected daily to determine the rate of progress.</Paragraph>
-                    <Paragraph>This was a very simple, one-page card layout of crucial data metrics from all fifty of the states, and memory was managed simply by using the default React hooks.</Paragraph>
+                    <Paragraph>The stats are returned in the dev window and the only dependency used is Puppeteer so the bot can navigate Instagram.</Paragraph>
                     <Line />
                     <Header>Check Out The Code</Header>
                     <Paragraph>You can view the live app as well as my code on github below.</Paragraph>

@@ -12,15 +12,12 @@ function Audiophile() {
             <ProjectIntro>
                 <IntroImage src={audiophile_intro} alt="project"/>
                 <IntroHeader>Audiophile</IntroHeader>
-                <Paragraph>After the climax of the Covid-19 pandemic, a vaccine was finally made. This was a pivotal moment in history since it meant that the world would soon go back to normal.</Paragraph>
+                <Paragraph>Audiophile is a complete Ecommerce website with stylish UI and UX design. Since all of my projects are front-end stacks, Audiophile has a cart that taps into local storage and is able to simulate a cart function.</Paragraph>
             </ProjectIntro>
             <ProjectMain>
-                    <Paragraph>Each state was moving at a different pace with their vaccinations. To get a better idea of the progress I decided to fetch data and monitor crucial metrics like new daily cases and the vaccination rate.
-    </Paragraph>
-                    <Paragraph>This is a react app that leverages Material-UI’s cards and grid library that creates a neat and responsive layout.  Data is updated daily and fetched from the Covid Act Now API and is then presented on charts (created with the Recharts library) so users can better understand the trend.</Paragraph>
-                    <Paragraph>I chose to use the Recharts library for charting the data (it was much easier to use than Material-UI charts).</Paragraph>
-                    <Paragraph>The app gives users quick access to new daily data for all fifty states. Data is automatically presented on charts so users can visually see the trends and nine key metrics are collected daily to determine the rate of progress.</Paragraph>
-                    <Paragraph>This was a very simple, one-page card layout of crucial data metrics from all fifty of the states, and memory was managed simply by using the default React hooks.</Paragraph>
+                    <Paragraph>The design features a multi-page layout and a form-based checkout page that actively checks the input fields and displays errors realtime.</Paragraph>
+                    <Paragraph>The tech I used for this project mainly revolved around React JS and SASS. React allows for a simple yet powerful set up and SASS makes repetitive styles less of a pain by modulating it and utilizing variables.</Paragraph>
+                    <Paragraph>It’s intricate design and functionality is complemented with mobile responsiveness that takes all of the details into account. Check it out for yourself.</Paragraph>
                     <Line />
                     <Header>Check Out The Code</Header>
                     <Paragraph>You can view the live app as well as my code on github below.</Paragraph>

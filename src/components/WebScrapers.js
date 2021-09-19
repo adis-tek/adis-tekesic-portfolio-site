@@ -16,8 +16,7 @@ function WebScrapers() {
                     <RowText>
                         <Heading>Twitter Bot</Heading>
                         <Paragraph>
-                        For all your listening needs visit this eccomerce store dedicated to
-                    top-notch audio tech.
+                        This is a Node JS project that utilizes the Twitter API and Google Spreadsheets to tweet quotes from a spreadsheet.
                         </Paragraph>
                     </RowText>
                     <RowButtons>
@@ -32,7 +31,7 @@ function WebScrapers() {
                     <RowText>
                         <Heading>Reddit Crawler</Heading>
                         <Paragraph>
-                        Check out this design agency for all your design needs. From packaging to websites; they do it all.
+                        This is a Reddit bot that takes in a reddit URL and indexes all of the Reddit comments by the amount of upvotes from most to least (and sorts them in a Google spreadsheet).
                         </Paragraph>
                     </RowText>
                     <RowButtons>
@@ -47,7 +46,7 @@ function WebScrapers() {
                     <RowText>
                         <Heading>Instagram Scraper</Heading>
                         <Paragraph>
-                        See this architect agency for pristine architecture designs.
+                        This is a Node JS bot that takes an Instagram URL and returns the profile’s stats.
                         </Paragraph>
                     </RowText>
                     <RowButtons>
@@ -60,8 +59,7 @@ function WebScrapers() {
                 <MobileRow>
                 <Heading>Twitter Bot</Heading>
                 <Paragraph>
-                    For all your listening needs visit this eccomerce store dedicated to
-                    top-notch audio tech.
+                This is a Node JS project that utilizes the Twitter API and Google Spreadsheets to tweet quotes from a spreadsheet.
                 </Paragraph>
                 <RowLink>
                 <Link to="/twitter-bot"><RowButton>Watch Demo</RowButton></Link>
@@ -70,7 +68,7 @@ function WebScrapers() {
                 <MobileRow>
                 <Heading>Reddit Crawler</Heading>
                 <Paragraph>
-                    Check out this design agency for all your design needs. From packaging to websites; they do it all.
+                This is a Reddit bot that takes in a reddit URL and indexes all of the Reddit comments by the amount of upvotes from most to least (and sorts them in a Google spreadsheet).
                 </Paragraph>
                 <RowLink>
                 <Link to="/reddit-crawler"><RowButton>Watch Demo</RowButton></Link>
@@ -79,7 +77,7 @@ function WebScrapers() {
                 <MobileRow>
                 <Heading>Instagram Scraper</Heading>
                 <Paragraph>
-                    See this architect agency for pristine architecture designs.
+                This is a Node JS bot that takes an Instagram URL and returns the profile’s stats.
                 </Paragraph>
                 <RowLink>
                 <Link to="/instagram-scraper"><RowButton>Watch Demo</RowButton></Link>

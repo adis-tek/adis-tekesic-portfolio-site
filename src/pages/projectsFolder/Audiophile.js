@@ -72,7 +72,7 @@ const ProjectIntro = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 10px;
+    margin: 0px;
 `;
 
 const IntroImage = styled.img`

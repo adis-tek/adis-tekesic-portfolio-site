@@ -18,9 +18,7 @@ function Home() {
             <TextContainer>
             <HeadingText>Hi, I'm Adis</HeadingText>
             <Text>
-            I started teaching myself front-end
-            web development a year ago
-            and now I make cool apps.
+            I'm a front-end developer and I've been developing web apps for over a year now.
             </Text>
             <RowLink>
                 <Link to="/contact"><RowButton>Contact Me</RowButton></Link>
@@ -32,8 +30,8 @@ function Home() {
         <Hero>
             <Description>
                 <TextBox>
-                <TextBoxHeading>Making Apps That Excite People</TextBoxHeading>
-                <TextBoxParagraph>A great app is just a digital experience users love.</TextBoxParagraph>
+                <TextBoxHeading>Web Apps for the Real World</TextBoxHeading>
+                <TextBoxParagraph>All of my projects showcase web apps with real-world potential.</TextBoxParagraph>
                 <RowLink>
                     <Link to="/about"><RowButton>About Me</RowButton></Link>
                 </RowLink>

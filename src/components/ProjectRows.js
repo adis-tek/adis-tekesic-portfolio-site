@@ -18,7 +18,7 @@ function ProjectRows() {
                     </RowImageContainer>
                     <VerticalRow>
                     <RowText>
-                        <TextBoxHeading>Presentation is Everything</TextBoxHeading>
+                        <TextBoxHeading>Project Breathe</TextBoxHeading>
                         <TextBoxParagraph>
                             An app that helps users understand complex Covid-19 data.
                         </TextBoxParagraph>
@@ -36,7 +36,7 @@ function ProjectRows() {
                     </RowImageContainer>
                     <VerticalRow>
                     <RowText>
-                        <TextBoxHeading>Play Something New</TextBoxHeading>
+                        <TextBoxHeading>Gourmet Games</TextBoxHeading>
                         <TextBoxParagraph>
                             Gamers don't have the time to find new titles, that's
                             why I made an app that finds new games for you.
@@ -55,10 +55,9 @@ function ProjectRows() {
                     </RowImageContainer>
                     <VerticalRow>
                     <RowText>
-                        <TextBoxHeading>Find New Recipes</TextBoxHeading>
+                        <TextBoxHeading>Fresh Dish</TextBoxHeading>
                         <TextBoxParagraph>
-                            You won't have to worry about eating the same thing over
-                            and over. Now you can pick a random recipe to try without looking through
+                            Can't figure out what to cook? Pick a random recipe to try without looking through
                             cook books.
                         </TextBoxParagraph>
                     </RowText>
@@ -75,7 +74,7 @@ function ProjectRows() {
                     </RowImageContainer>
                     <VerticalRow>
                     <RowText>
-                        <TextBoxHeading>Audiophile Central</TextBoxHeading>
+                        <TextBoxHeading>Audiophile</TextBoxHeading>
                         <TextBoxParagraph>
                         For all your listening needs visit this eccomerce store dedicated to
                     top-notch audio tech.
@@ -94,7 +93,7 @@ function ProjectRows() {
                     </RowImageContainer>
                     <VerticalRow>
                     <RowText>
-                        <TextBoxHeading>Award-Winning Designs</TextBoxHeading>
+                        <TextBoxHeading>Designo</TextBoxHeading>
                         <TextBoxParagraph>
                         Check out this design agency for all your design needs. From packaging to websites; they do it all.
                         </TextBoxParagraph>
@@ -112,9 +111,9 @@ function ProjectRows() {
                     </RowImageContainer>
                     <VerticalRow>
                     <RowText>
-                        <TextBoxHeading>Architects Are a Tap Away</TextBoxHeading>
+                        <TextBoxHeading>Arch Studio</TextBoxHeading>
                         <TextBoxParagraph>
-                        See this architect agency for pristine architecture designs.
+                        See this architect agency for pristine architecture designs and for project planning.
                         </TextBoxParagraph>
                     </RowText>
                     <RowButtons>
@@ -126,7 +125,7 @@ function ProjectRows() {
                 </Row2Large>
                 <MobileRow>
                 <RowImage src={project_breathe_screenshot} />
-                <TextBoxHeading>Presentation is Everything</TextBoxHeading>
+                <TextBoxHeading>Project Breathe</TextBoxHeading>
                 <TextBoxParagraph>
                     An app that helps users understand complex Covid-19 data.
                 </TextBoxParagraph>
@@ -136,7 +135,7 @@ function ProjectRows() {
                 </MobileRow>
                 <MobileRow>
                 <RowImage src={gourmet_games_screenshot} />
-                <TextBoxHeading>Play Something New</TextBoxHeading>
+                <TextBoxHeading>Gourmet Games</TextBoxHeading>
                     <TextBoxParagraph>
                     Gamers don't have the time to find new titles, that's
                     why I made an app that finds new games for you.
@@ -147,11 +146,10 @@ function ProjectRows() {
                 </MobileRow>
                 <MobileRow>
                 <RowImage2 src={fresh_dish_screenshot} />
-                <TextBoxHeading>Find New Recipes</TextBoxHeading>
+                <TextBoxHeading>Fresh Dish</TextBoxHeading>
                 <TextBoxParagraph>
-                    You won't have to worry about eating the same thing over
-                    and over. Now you can pick a random recipe to try without looking through
-                    cook books.
+                Can't figure out what to cook? Pick a random recipe to try without looking through
+                cook books.
                 </TextBoxParagraph>
                 <RowLink>
                 <Link to="/fresh-dish"><RowButton>Take a look</RowButton></Link>
@@ -159,7 +157,7 @@ function ProjectRows() {
                 </MobileRow>
                 <MobileRow>
                 <RowImage2 src={audiophile} />
-                <TextBoxHeading>Audiophile Central</TextBoxHeading>
+                <TextBoxHeading>Audiophile</TextBoxHeading>
                 <TextBoxParagraph>
                     For all your listening needs visit this eccomerce store dedicated to
                     top-notch audio tech.
@@ -170,7 +168,7 @@ function ProjectRows() {
                 </MobileRow>
                 <MobileRow>
                 <RowImage2 src={designo} />
-                <TextBoxHeading>Award-Winning Designs</TextBoxHeading>
+                <TextBoxHeading>Designo</TextBoxHeading>
                 <TextBoxParagraph>
                     Check out this design agency for all your design needs. From packaging to websites; they do it all.
                 </TextBoxParagraph>
@@ -180,7 +178,7 @@ function ProjectRows() {
                 </MobileRow>
                 <MobileRow>
                 <RowImage2 src={arch_studio} />
-                <TextBoxHeading>Architects Are a Tap Away</TextBoxHeading>
+                <TextBoxHeading>Arch Studio</TextBoxHeading>
                 <TextBoxParagraph>
                     See this architect agency for pristine architecture designs.
                 </TextBoxParagraph>

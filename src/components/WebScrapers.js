@@ -31,7 +31,7 @@ function WebScrapers() {
                     <RowText>
                         <Heading>Reddit Crawler</Heading>
                         <Paragraph>
-                        This is a Reddit bot that takes in a reddit URL and indexes all of the Reddit comments by the amount of upvotes from most to least (and sorts them in a Google spreadsheet).
+                        This is a Reddit bot that takes in a reddit URL and indexes all of the Reddit comments by the amount of upvotes from most to least.
                         </Paragraph>
                     </RowText>
                     <RowButtons>
@@ -46,7 +46,7 @@ function WebScrapers() {
                     <RowText>
                         <Heading>Instagram Scraper</Heading>
                         <Paragraph>
-                        This is a Node JS bot that takes an Instagram URL and returns the profile’s stats.
+                        This is a Node JS bot that takes an Instagram URL and returns the profile’s information and stats.
                         </Paragraph>
                     </RowText>
                     <RowButtons>
@@ -171,7 +171,7 @@ const ScraperContainer = styled.div`
     width: 100%;
     max-width: 1350px;
     height: auto;
-    margin: 0px 0px; 
+    margin: 0px 0px 40px 0px; 
     @media (max-width: 1025px) {
         flex-direction: column;
     }

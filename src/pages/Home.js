@@ -18,7 +18,7 @@ function Home() {
             <TextContainer>
             <HeadingText>Hi, I'm Adis</HeadingText>
             <Text>
-            I'm a front-end developer and I've been developing web apps for over a year now.
+            I'm a front-end developer and I've been developing web apps for over a year.
             </Text>
             <RowLink>
                 <Link to="/contact"><RowButton>Contact Me</RowButton></Link>

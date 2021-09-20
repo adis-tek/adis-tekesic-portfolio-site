@@ -16,20 +16,29 @@ function About() {
         <AboutContainer>
             <Type src={type} alt="type" />
             <Header>Why Code?</Header>
-            <Main>The world is moving towards an even more interconnected world. Especially with the advent of crypto and IoT.</Main>
-            <Main>Front-end development is the perfect role for introducing oneself to this broad concept of "coding".</Main>
+            <Main>The world is moving towards an ever more interconnected world — especially with the advent of crypto and IoT.</Main>
+            <Main>Front-end development is the perfect role for working on this growing digital environment. I really like the idea of being able to pivot onto a more specific
+                segment of online projects like crypto, robotics, or artificial intelligence.
+            </Main>
                 <IconSection>
                     <Paragraph>
                         <Icon src={dart} alt="dart and board" />
-                        <Text>When developing apps the number one target to hit is the purpose behind the app; since apps built around a solid purpose will adopt the greatest number of users.</Text>
+                        <Text>Purpose-driven apps are the ones most likely to change the world; the bigger the purpose the greater the app.
+                            Is there a task better than changing the world?
+                        </Text>
                     </Paragraph>
                     <Paragraph>
                         <Icon src={coin} alt="money" />
-                        <Text>Coding apps</Text>
+                        <Text>Great UIs and UX experiences not only make apps look professional but also
+                            form a positive impression on the users — and building trust is crucial for brands.
+                        </Text>
                     </Paragraph>
                     <Paragraph>
                         <Icon src={speaker} alt="conversation box" />
-                        <Text>Excellent communication leads to more people talking about you. Ideas are like viruses and the good ones spread far and fast. And since everyone and everything nowadays is a brand, excellent communication is what the world needs the most.</Text>
+                        <Text>Communicating properly with people requires more than just text. Devs wrap their
+                            messages in intricate layouts, inviting animations, stunning graphics and it all 
+                            culminates into an addicting experience.
+                        </Text>
                     </Paragraph>
                 </IconSection>
                 <MobileIconSection>
@@ -40,8 +49,9 @@ function About() {
                     <Icon src={speaker} alt="conversation box" />
                     <Text>Excellent communication leads to more people talking about you. Ideas are like viruses and the good ones spread far and fast. And since everyone and everything nowadays is a brand, excellent communication is what the world needs the most.</Text>
                 </MobileIconSection>
-            <Main>By coding together clean writing, intuitive UI design, and eye-catching graphics you're bound to create a memorable experience that really hits the bullseye.</Main>
-            <Main>Also, if you'd like to read the whitepaper I mentioned you can do so <a href={wp}><Highlight>here.</Highlight></a></Main>
+            <Main>One of the most alluring parts of being a dev is knowing that you're constantly working
+                on the future and you'll never really know what problems you'll solve next. It's quite the role.
+            </Main>
         </AboutContainer>
         </motion.div>
     )

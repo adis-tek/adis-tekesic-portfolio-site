@@ -112,7 +112,7 @@ const HeadingText = styled.h1`
 const Text = styled.h2`
     font-family: 'Roboto', sans-serif;
     width: 400px;
-    margin-bottom: 10px;
+    margin: 0px 0px 10px 0px;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -122,13 +122,13 @@ const Text = styled.h2`
     @media (max-width: 1025px) {
         width: 366px;
         font-size: 25px;
-        margin-left: 35px;
+        margin: 0px 0px 0px 35px;
 
     }
     @media (max-width: 550px) {
         width: 266px;
         font-size: 21px;
-        margin-left: 15px;
+        margin: 0px 0px 0px 35px;
     }
 
 `;
@@ -368,7 +368,7 @@ const RowLink = styled(Link) `
     @media (max-width: 1025px) {
         width: 60%;
     }
-    @media (max-width: 525px) {
+    @media (max-width: 550px) {
         width: 80%;
     }
 `;

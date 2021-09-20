@@ -16,16 +16,16 @@ function About() {
         <AboutContainer>
             <Type src={type} alt="type" />
             <Header>Why Code?</Header>
-            <Main>After selling expensive software, writing whitepapers, and even starting up a handful of online brands, I thought I’d put it all together and learn how to code.</Main>
-            <Main>Front-end development is the perfect role for polymaths. The design, content, and code all must be 10/10.</Main>
+            <Main>The world is moving towards an even more interconnected world. Especially with the advent of crypto and IoT.</Main>
+            <Main>Front-end development is the perfect role for introducing oneself to this broad concept of "coding".</Main>
                 <IconSection>
                     <Paragraph>
                         <Icon src={dart} alt="dart and board" />
-                        <Text>Helping viewers understand your message is like a game of darts — you’re always trying to hit the bullseye; you need your customer to 100% get the message, proposition, or product you’re putting out.</Text>
+                        <Text>When developing apps the number one target to hit is the purpose behind the app; since apps built around a solid purpose will adopt the greatest number of users.</Text>
                     </Paragraph>
                     <Paragraph>
                         <Icon src={coin} alt="money" />
-                        <Text>Money is moving around the internet like never before and what stands in the way of excellent ROIs is communication — that means I make a career out of hitting bullseyes with customers by simply helping them understand the brand.</Text>
+                        <Text>Coding apps</Text>
                     </Paragraph>
                     <Paragraph>
                         <Icon src={speaker} alt="conversation box" />

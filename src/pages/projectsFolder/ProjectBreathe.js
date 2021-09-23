@@ -84,7 +84,7 @@ const IntroImage = styled.img`
     margin: 40px 50px 60px 50px;
     object-fit: cover;
     @media (max-width: 1025px) {
-        width: 105%;
+        width: 95%;
         margin: 0px 50px 20px 50px;
     }
 `;

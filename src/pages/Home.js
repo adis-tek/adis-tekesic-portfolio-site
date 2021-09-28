@@ -142,7 +142,7 @@ const Line = styled.div`
 const Line2 = styled.div`
     width: 90%;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    margin: 50px 0px 0px 0px;
+    margin: 50px 0px 50px 0px;
     @media (max-width: 1025px) {
         margin: 50px 0px 50px 0px;
     }

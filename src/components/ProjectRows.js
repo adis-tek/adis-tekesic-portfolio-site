@@ -12,6 +12,124 @@ function ProjectRows() {
     return (
         <>
             <RowContainer>
+            <Row2Large>
+                    <RowImageContainer>
+                    <RowImage src={audiophile} />
+                    </RowImageContainer>
+                    <VerticalRow>
+                    <RowText>
+                        <TextBoxHeading>Audiophile</TextBoxHeading>
+                        <TextBoxParagraph>
+                        For all your listening needs visit this eccomerce store dedicated to
+                    top-notch audio tech.
+                        </TextBoxParagraph>
+                    </RowText>
+                    <RowButtons>
+                    <RowLink>
+                        <Link to="/audiophile"><RowButton>Take a look</RowButton></Link>
+                    </RowLink>
+                    </RowButtons>
+                    </VerticalRow>
+                </Row2Large>
+                <Row1Large>
+                    <RowImageContainer>
+                    <RowImage src={designo} />
+                    </RowImageContainer>
+                    <VerticalRow>
+                    <RowText>
+                        <TextBoxHeading>Designo</TextBoxHeading>
+                        <TextBoxParagraph>
+                        Check out this design agency for all your design needs. From packaging to websites; they do it all.
+                        </TextBoxParagraph>
+                    </RowText>
+                    <RowButtons>
+                    <RowLink>
+                    <Link to="/designo"><RowButton>Take a look</RowButton></Link>
+                    </RowLink>
+                    </RowButtons>
+                    </VerticalRow>
+                </Row1Large>
+                <Row2Large>
+                    <RowImageContainer>
+                    <RowImage src={arch_studio} />
+                    </RowImageContainer>
+                    <VerticalRow>
+                    <RowText>
+                        <TextBoxHeading>Arch Studio</TextBoxHeading>
+                        <TextBoxParagraph>
+                        See this architect agency for pristine architecture designs and for project planning.
+                        </TextBoxParagraph>
+                    </RowText>
+                    <RowButtons>
+                    <RowLink>
+                        <Link to="/arch-studio"><RowButton>Take a look</RowButton></Link>
+                    </RowLink>
+                    </RowButtons>
+                    </VerticalRow>
+                </Row2Large>
+                <MobileRow>
+                <RowImage2 src={audiophile} />
+                <TextBoxHeading>Audiophile</TextBoxHeading>
+                <TextBoxParagraph>
+                    For all your listening needs visit this eccomerce store dedicated to
+                    top-notch audio tech.
+                </TextBoxParagraph>
+                <RowLink>
+                <Link to="/audiophile"><RowButton>Take a look</RowButton></Link>
+                </RowLink>
+                </MobileRow>
+                <MobileRow>
+                <RowImage2 src={designo} />
+                <TextBoxHeading>Designo</TextBoxHeading>
+                <TextBoxParagraph>
+                    Check out this design agency for all your design needs. From packaging to websites; they do it all.
+                </TextBoxParagraph>
+                <RowLink>
+                <Link to="/designo"><RowButton>Take a look</RowButton></Link>
+                </RowLink>
+                </MobileRow>
+                <MobileRow>
+                <RowImage2 src={arch_studio} />
+                <TextBoxHeading>Arch Studio</TextBoxHeading>
+                <TextBoxParagraph>
+                    See this architect agency for pristine architecture designs.
+                </TextBoxParagraph>
+                <RowLink>
+                <Link to="/arch-studio"><RowButton>Take a look</RowButton></Link>
+                </RowLink>
+                </MobileRow>
+                <MobileRow>
+                <RowImage src={project_breathe_screenshot} />
+                <TextBoxHeading>Project Breathe</TextBoxHeading>
+                <TextBoxParagraph>
+                    An app that helps users understand complex Covid-19 data.
+                </TextBoxParagraph>
+                <RowLink>
+                <Link to="/project-breathe"><RowButton>Take a look</RowButton></Link>
+                </RowLink>
+                </MobileRow>
+                <MobileRow>
+                <RowImage src={gourmet_games_screenshot} />
+                <TextBoxHeading>Gourmet Games</TextBoxHeading>
+                    <TextBoxParagraph>
+                    Gamers don't have the time to find new titles, that's
+                    why I made an app that finds new games for you.
+                    </TextBoxParagraph>
+                <RowLink>
+                <Link to="/gourmet-games"><RowButton>Take a look</RowButton></Link>
+                </RowLink>
+                </MobileRow>
+                <MobileRow>
+                <RowImage2 src={fresh_dish_screenshot} />
+                <TextBoxHeading>Fresh Dish</TextBoxHeading>
+                <TextBoxParagraph>
+                Can't figure out what to cook? Pick a random recipe to try without looking through
+                cook books.
+                </TextBoxParagraph>
+                <RowLink>
+                <Link to="/fresh-dish"><RowButton>Take a look</RowButton></Link>
+                </RowLink>
+                </MobileRow>
                 <Row1>
                     <RowImageContainer>
                     <RowImage src={project_breathe_screenshot} />
@@ -68,124 +186,6 @@ function ProjectRows() {
                     </RowButtons>
                     </VerticalRow>
                 </Row1>
-                <Row2Large>
-                    <RowImageContainer>
-                    <RowImage src={audiophile} />
-                    </RowImageContainer>
-                    <VerticalRow>
-                    <RowText>
-                        <TextBoxHeading>Audiophile</TextBoxHeading>
-                        <TextBoxParagraph>
-                        For all your listening needs visit this eccomerce store dedicated to
-                    top-notch audio tech.
-                        </TextBoxParagraph>
-                    </RowText>
-                    <RowButtons>
-                    <RowLink>
-                        <Link to="/audiophile"><RowButton>Take a look</RowButton></Link>
-                    </RowLink>
-                    </RowButtons>
-                    </VerticalRow>
-                </Row2Large>
-                <Row1Large>
-                    <RowImageContainer>
-                    <RowImage src={designo} />
-                    </RowImageContainer>
-                    <VerticalRow>
-                    <RowText>
-                        <TextBoxHeading>Designo</TextBoxHeading>
-                        <TextBoxParagraph>
-                        Check out this design agency for all your design needs. From packaging to websites; they do it all.
-                        </TextBoxParagraph>
-                    </RowText>
-                    <RowButtons>
-                    <RowLink>
-                    <Link to="/designo"><RowButton>Take a look</RowButton></Link>
-                    </RowLink>
-                    </RowButtons>
-                    </VerticalRow>
-                </Row1Large>
-                <Row2Large>
-                    <RowImageContainer>
-                    <RowImage src={arch_studio} />
-                    </RowImageContainer>
-                    <VerticalRow>
-                    <RowText>
-                        <TextBoxHeading>Arch Studio</TextBoxHeading>
-                        <TextBoxParagraph>
-                        See this architect agency for pristine architecture designs and for project planning.
-                        </TextBoxParagraph>
-                    </RowText>
-                    <RowButtons>
-                    <RowLink>
-                        <Link to="/arch-studio"><RowButton>Take a look</RowButton></Link>
-                    </RowLink>
-                    </RowButtons>
-                    </VerticalRow>
-                </Row2Large>
-                <MobileRow>
-                <RowImage src={project_breathe_screenshot} />
-                <TextBoxHeading>Project Breathe</TextBoxHeading>
-                <TextBoxParagraph>
-                    An app that helps users understand complex Covid-19 data.
-                </TextBoxParagraph>
-                <RowLink>
-                <Link to="/project-breathe"><RowButton>Take a look</RowButton></Link>
-                </RowLink>
-                </MobileRow>
-                <MobileRow>
-                <RowImage src={gourmet_games_screenshot} />
-                <TextBoxHeading>Gourmet Games</TextBoxHeading>
-                    <TextBoxParagraph>
-                    Gamers don't have the time to find new titles, that's
-                    why I made an app that finds new games for you.
-                    </TextBoxParagraph>
-                <RowLink>
-                <Link to="/gourmet-games"><RowButton>Take a look</RowButton></Link>
-                </RowLink>
-                </MobileRow>
-                <MobileRow>
-                <RowImage2 src={fresh_dish_screenshot} />
-                <TextBoxHeading>Fresh Dish</TextBoxHeading>
-                <TextBoxParagraph>
-                Can't figure out what to cook? Pick a random recipe to try without looking through
-                cook books.
-                </TextBoxParagraph>
-                <RowLink>
-                <Link to="/fresh-dish"><RowButton>Take a look</RowButton></Link>
-                </RowLink>
-                </MobileRow>
-                <MobileRow>
-                <RowImage2 src={audiophile} />
-                <TextBoxHeading>Audiophile</TextBoxHeading>
-                <TextBoxParagraph>
-                    For all your listening needs visit this eccomerce store dedicated to
-                    top-notch audio tech.
-                </TextBoxParagraph>
-                <RowLink>
-                <Link to="/audiophile"><RowButton>Take a look</RowButton></Link>
-                </RowLink>
-                </MobileRow>
-                <MobileRow>
-                <RowImage2 src={designo} />
-                <TextBoxHeading>Designo</TextBoxHeading>
-                <TextBoxParagraph>
-                    Check out this design agency for all your design needs. From packaging to websites; they do it all.
-                </TextBoxParagraph>
-                <RowLink>
-                <Link to="/designo"><RowButton>Take a look</RowButton></Link>
-                </RowLink>
-                </MobileRow>
-                <MobileRow>
-                <RowImage2 src={arch_studio} />
-                <TextBoxHeading>Arch Studio</TextBoxHeading>
-                <TextBoxParagraph>
-                    See this architect agency for pristine architecture designs.
-                </TextBoxParagraph>
-                <RowLink>
-                <Link to="/arch-studio"><RowButton>Take a look</RowButton></Link>
-                </RowLink>
-                </MobileRow>
             </RowContainer>
         </>
     );

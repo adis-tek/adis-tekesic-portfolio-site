@@ -190,7 +190,7 @@ function ProjectRows() {
         </>
     );
 };
-
+ 
 const RowContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -222,7 +222,7 @@ const Row1 = styled.div`
     align-items: center;
     justify-content: center;
     background-color: white;
-    margin: 150px 0px 150px 0px;
+    margin: 200px 0px 150px 0px;
     @media (max-width: 1025px) {
         display: none;
         flex-direction: column;
@@ -252,7 +252,7 @@ const Row2 = styled.div`
     align-items: center;
     justify-content: center;
     background-color: white;
-    margin: 40px 0px 60px 0;
+    margin: 30px 0px 10px 0;
     @media (max-width: 1025px) {
         display: none;
         flex-direction: column;

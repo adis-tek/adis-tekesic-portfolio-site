@@ -91,7 +91,7 @@ function WebScrapers() {
 const Line = styled.div`
     width: 90%;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    margin: 160px 0px -80px 0px;
+    margin: 50px 0px -80px 0px;
     max-width: 1350px;
     @media (max-width: 1025px) {
         margin: 0px 0px 0px 0px;

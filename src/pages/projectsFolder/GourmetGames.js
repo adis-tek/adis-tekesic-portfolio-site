@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import gourmet_games_screenshot from '../../images/gourmet_games/gourmet_games_screenshot.png';
+import GourmetGamesVideo from '../../videos/gourmet_games_desktop.mp4';
+import GourmetGamesVideoMobile from '../../videos/gourmet_games_mobile.mp4';
 import { motion } from "framer-motion";
 import { fadeIn } from "../../animation";
 
@@ -10,12 +11,17 @@ function GourmetGames() {
         <ProjectContainer>
             <ProjectInnerContainer>
             <ProjectIntro>
-                <IntroImage src={gourmet_games_screenshot} alt="test"/>
+            <VideoContainer>
+            <Video width="1920" height="1080" src={GourmetGamesVideo} />
+            </VideoContainer>
                 <IntroHeader>Gourmet Games</IntroHeader>
                 <Paragraph>Everyone loves to play a new game but not everyone has the time to go through lists of new and upcoming titles. Gourmet Games is an app that gathers the ratings, reviews, screenshots, and summary of each upcoming, new, and popular title into one clean interface.</Paragraph>
             </ProjectIntro>
             <ProjectMain>
                     <Paragraph>I decided to use React and Redux for memory management in this app as a way to get familiar with actions and reducers. The game data comes from the RAWG API that updates its game database with new titles every week.</Paragraph>
+                    <VideoContainerMobile>
+                    <VideoMobile width="1080" height="1920" src={GourmetGamesVideoMobile} />
+                    </VideoContainerMobile>
                     <Paragraph>I styled the app using styled components (so I can keep my css in the jsx) and framer motion for the minimal animations in the app.</Paragraph>
                     <Line />
                     <CTA>Check Out The Code</CTA>
@@ -30,6 +36,56 @@ function GourmetGames() {
     </motion.div>
     );
 };
+
+const VideoContainer = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: 75%;
+  padding-top: 42.5%;
+  margin: 0px 0px 70px 0px;
+  @media (max-width: 1025px) {
+    width: 90%;
+    padding-top: 51%;
+}
+`;
+
+const Video = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+`;
+
+const VideoContainerMobile = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: 24%;
+  padding-top: 42.5%;
+  margin: 40px 0px 40px 0px;
+  @media (max-width: 1025px) {
+    width: 24%;
+    padding: 44% 25% 44% 25%;
+    margin: 40px 0px 40px 0px;
+}
+@media (max-width: 650px) {
+    width: 24%;
+    padding: 80% 45% 80% 45%;
+    margin: 40px 0px 40px 0px;
+}
+`;
+
+const VideoMobile = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+`;
 
 const ProjectContainer = styled.div`
     display: flex;

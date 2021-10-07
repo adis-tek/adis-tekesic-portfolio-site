@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import arch_Studio_intro from '../../images/home/arch_studio_screenshot.png';
+import ArchStudioVideo from '../../videos/arch_studio_desktop.mp4';
+import ArchStudioVideoMobile from '../../videos/arch_studio_mobile.mp4';
 import { motion } from "framer-motion";
 import { fadeIn } from "../../animation";
 
@@ -10,13 +11,18 @@ function ArchStudio() {
         <ProjectContainer>
             <ProjectInnerContainer>
             <ProjectIntro>
-                <IntroImage src={arch_Studio_intro} alt="project"/>
+            <VideoContainer>
+            <Video width="1920" height="1080" src={ArchStudioVideo} />
+            </VideoContainer>
                 <IntroHeader>Arch Studio</IntroHeader>
                 <Paragraph>Arch Studio is an architectural group consisting of a small team of architects. On the homepage you’re greeted with an interactive slideshow (desktop only) and disappears on mobile devices.</Paragraph>
             </ProjectIntro>
             <ProjectMain>
                     <Paragraph>The “about” and “contact” pages have an interesting overlay design and the “contact” page specifically has a small (and minimalistic) form with realtime error detection.</Paragraph>
                     <Paragraph>The tech I used for this project mainly revolved around React JS and SASS. React allows for a simple yet powerful set up and SASS makes repetitive styles less of a pain by modulating it and utilizing variables.</Paragraph>
+                    <VideoContainerMobile>
+                    <VideoMobile width="1080" height="1920" src={ArchStudioVideoMobile} />
+                    </VideoContainerMobile>
                     <Paragraph>The footer has a call-to-action button floating off to the right (desktop). For a design-oriented site like this attention to details and minimalism matter.</Paragraph>
                     <Line />
                     <Header>Check Out The Code</Header>
@@ -31,6 +37,56 @@ function ArchStudio() {
     </motion.div>
     )
 }
+
+const VideoContainer = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: 75%;
+  padding-top: 42.5%;
+  margin: 0px 0px 70px 0px;
+  @media (max-width: 1025px) {
+    width: 90%;
+    padding-top: 51%;
+}
+`;
+
+const Video = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+`;
+
+const VideoContainerMobile = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: 24%;
+  padding-top: 42.5%;
+  margin: 40px 0px 40px 0px;
+  @media (max-width: 1025px) {
+    width: 24%;
+    padding: 44% 25% 44% 25%;
+    margin: 40px 0px 40px 0px;
+}
+@media (max-width: 650px) {
+    width: 24%;
+    padding: 80% 45% 80% 45%;
+    margin: 40px 0px 40px 0px;
+}
+`;
+
+const VideoMobile = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+`;
 
 const ProjectContainer = styled.div`
     display: flex;

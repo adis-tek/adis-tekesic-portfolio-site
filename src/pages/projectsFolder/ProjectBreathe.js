@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import project_breathe_screenshot from '../../images/project_breathe/project_breathe_screenshot.png';
+import ProjectBreatheVideo from '../../videos/project_breathe_desktop.mp4';
+import ProjectBreatheVideoMobile from '../../videos/project_breathe_mobile.mp4';
 import { motion } from "framer-motion";
 import { fadeIn } from "../../animation";
 
@@ -10,7 +11,9 @@ function ProjectBreathe() {
         <ProjectContainer>
             <ProjectInnerContainer>
             <ProjectIntro>
-                <IntroImage src={project_breathe_screenshot} alt="project"/>
+            <VideoContainer>
+            <Video width="1920" height="1080" src={ProjectBreatheVideo} />
+            </VideoContainer>
                 <IntroHeader>Project Breathe</IntroHeader>
                 <Paragraph>After the climax of the Covid-19 pandemic, a vaccine was finally made. This was a pivotal moment in history since it meant that the world would soon go back to normal.</Paragraph>
             </ProjectIntro>
@@ -19,6 +22,9 @@ function ProjectBreathe() {
                     <Paragraph>This is a react app that leverages Material-UI’s cards and grid library that creates a neat and responsive layout.  Data is updated daily and fetched from the Covid Act Now API and is then presented on charts (created with the Recharts library) so users can better understand the trend.</Paragraph>
                     <Paragraph>I chose to use the Recharts library for charting the data (it was much easier to use than Material-UI charts).</Paragraph>
                     <Paragraph>The app gives users quick access to new daily data for all fifty states. Data is automatically presented on charts so users can visually see the trends and nine key metrics are collected daily to determine the rate of progress.</Paragraph>
+                    <VideoContainerMobile>
+                    <VideoMobile width="1080" height="1920" src={ProjectBreatheVideoMobile} />
+                    </VideoContainerMobile>
                     <Paragraph>This was a very simple, one-page card layout of crucial data metrics from all fifty of the states, and memory was managed simply by using the default React hooks.</Paragraph>
                     <Line />
                     <Header>Check Out The Code</Header>
@@ -33,6 +39,56 @@ function ProjectBreathe() {
     </motion.div>
     );
 };
+
+const VideoContainer = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: 75%;
+  padding-top: 42.5%;
+  margin: 0px 0px 70px 0px;
+  @media (max-width: 1025px) {
+    width: 90%;
+    padding-top: 51%;
+}
+`;
+
+const Video = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+`;
+
+const VideoContainerMobile = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: 24%;
+  padding-top: 42.5%;
+  margin: 40px 0px 40px 0px;
+  @media (max-width: 1025px) {
+    width: 24%;
+    padding: 44% 25% 44% 25%;
+    margin: 40px 0px 40px 0px;
+}
+@media (max-width: 650px) {
+    width: 24%;
+    padding: 80% 45% 80% 45%;
+    margin: 40px 0px 40px 0px;
+}
+`;
+
+const VideoMobile = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+`;
 
 const ProjectContainer = styled.div`
     display: flex;

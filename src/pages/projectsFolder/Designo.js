@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import designo_intro from '../../images/home/designo_screenshot.png';
+import DesignoVideo from '../../videos/designo_official_desktop.mp4';
+import DesignoVideoMobile from '../../videos/designo_mobile.mp4';
 import { motion } from "framer-motion";
 import { fadeIn } from "../../animation";
 
@@ -10,13 +11,18 @@ function Designo() {
         <ProjectContainer>
             <ProjectInnerContainer>
             <ProjectIntro>
-                <IntroImage src={designo_intro} alt="project"/>
+            <VideoContainer>
+            <Video width="1920" height="1080" src={DesignoVideo} />
+            </VideoContainer>
                 <IntroHeader>Designo</IntroHeader>
                 <Paragraph>Designo is a design agency that specializes in both online and offline mediums. The site features a multi-page layout in order to encapsulate the various projects they’ve done.</Paragraph>
             </ProjectIntro>
             <ProjectMain>
                     <Paragraph>The tech I used for this project mainly revolved around React JS and SASS. React allows for a simple yet powerful set up and SASS makes repetitive styles less of a pain by modulating it and utilizing variables.</Paragraph>
                     <Paragraph>The footer features a floating call-to-action component that reacts with the entire website when the view-width and height changes.</Paragraph>
+                    <VideoContainerMobile>
+                    <VideoMobile width="1920" height="1080" src={DesignoVideoMobile} />
+                    </VideoContainerMobile>
                     <Paragraph>The contact page has a short form with real time input error detection.</Paragraph>
                     <Line />
                     <Header>Check Out The Code</Header>
@@ -31,6 +37,56 @@ function Designo() {
     </motion.div>
     )
 }
+
+const VideoContainer = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: 75%;
+  padding-top: 42.5%;
+  margin: 0px 0px 70px 0px;
+  @media (max-width: 1025px) {
+    width: 90%;
+    padding-top: 51%;
+}
+`;
+
+const Video = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+`;
+
+const VideoContainerMobile = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: 24%;
+  padding-top: 42.5%;
+  margin: 40px 0px 40px 0px;
+  @media (max-width: 1025px) {
+    width: 24%;
+    padding: 44% 25% 44% 25%;
+    margin: 40px 0px 40px 0px;
+}
+@media (max-width: 650px) {
+    width: 24%;
+    padding: 80% 45% 80% 45%;
+    margin: 40px 0px 40px 0px;
+}
+`;
+
+const VideoMobile = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+`;
 
 const ProjectContainer = styled.div`
     display: flex;

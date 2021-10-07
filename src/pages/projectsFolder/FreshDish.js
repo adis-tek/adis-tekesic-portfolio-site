@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import fresh_dish_screenshot from '../../images/fresh-dish/fresh_dish_screenshot.png';
+import FreshDishVideo from '../../videos/fresh_dish_desktop.mp4';
+import FreshDishVideoMobile from '../../videos/fresh_dish_mobile.mp4';
 import { motion } from "framer-motion";
 import { fadeIn } from "../../animation";
 
@@ -11,7 +12,9 @@ function FreshDish() {
         <ProjectContainer>
             <ProjectInnerContainer>
             <ProjectIntro>
-                <IntroImage src={fresh_dish_screenshot} alt="project"/>
+            <VideoContainer>
+            <Video width="1920" height="1080" src={FreshDishVideo} />
+            </VideoContainer>
                 <IntroHeader>Fresh Dish</IntroHeader>
                 <Paragraph>Cooking the same meals throughout the week can get boring. Fresh Dish is designed to randomly select a recipe for you based on the ingredient you select.</Paragraph>
                 <Paragraph>You’ll never run out of things to cook since new recipes are just a tap away. The recipes come from the TheMealDB API and the app will use a random number as a way to select a random recipe in the ingredient category.</Paragraph>
@@ -19,6 +22,9 @@ function FreshDish() {
             <ProjectMain>
                     <Paragraph>When you find the recipes you want to try, simply add them to your favorites for reference. The favorites page can only be viewed when you’re logged in.</Paragraph>
                     <Paragraph>The way the app handles authentication is through Firebase and the way the app saves recipes is by using FireStore from Firebase (a lightweight database).</Paragraph>
+                    <VideoContainerMobile>
+                    <VideoMobile width="1080" height="1920" src={FreshDishVideoMobile} />
+                    </VideoContainerMobile>
                     <Paragraph>Along with an interactive and responsive design created using styled components, the app is extremely interactive and responsive on all mobile devices.</Paragraph>
                     <Line />
                     <Header>Check Out The Code</Header>
@@ -34,6 +40,56 @@ function FreshDish() {
     );
 };
 
+const VideoContainer = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: 75%;
+  padding-top: 42.5%;
+  margin: 0px 0px 70px 0px;
+  @media (max-width: 1025px) {
+    width: 90%;
+    padding-top: 51%;
+}
+`;
+
+const Video = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+`;
+
+const VideoContainerMobile = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: 24%;
+  padding-top: 42.5%;
+  margin: 40px 0px 40px 0px;
+  @media (max-width: 1025px) {
+    width: 24%;
+    padding: 44% 25% 44% 25%;
+    margin: 40px 0px 40px 0px;
+}
+@media (max-width: 650px) {
+    width: 24%;
+    padding: 80% 45% 80% 45%;
+    margin: 40px 0px 40px 0px;
+}
+`;
+
+const VideoMobile = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+`;
+ 
 const ProjectContainer = styled.div`
     display: flex;
     flex-direction: column;

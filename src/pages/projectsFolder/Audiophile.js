@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import audiophile_intro from '../../images/home/audiophile_screenshot.png';
+import AudiophileVideoDesktop from '../../videos/audiophile_desktop.mp4';
+import AudiophileVideoMobile from '../../videos/audiophile_mobile.mp4';
 import { motion } from "framer-motion";
 import { fadeIn } from "../../animation";
 
@@ -10,13 +11,18 @@ function Audiophile() {
         <ProjectContainer>
             <ProjectInnerContainer>
             <ProjectIntro>
-                <IntroImage src={audiophile_intro} alt="project"/>
+            <VideoContainer>
+            <Video width="1920" height="1080" src={AudiophileVideoDesktop} />
+            </VideoContainer>
                 <IntroHeader>Audiophile</IntroHeader>
                 <Paragraph>Audiophile is a complete Ecommerce website with stylish UI and UX design. Since all of my projects are front-end stacks, Audiophile has a cart that taps into local storage and is able to simulate a cart function.</Paragraph>
             </ProjectIntro>
             <ProjectMain>
                     <Paragraph>The design features a multi-page layout and a form-based checkout page that actively checks the input fields and displays errors realtime.</Paragraph>
                     <Paragraph>The tech I used for this project mainly revolved around React JS and SASS. React allows for a simple yet powerful set up and SASS makes repetitive styles less of a pain by modulating it and utilizing variables.</Paragraph>
+                    <VideoContainerMobile>
+                    <VideoMobile width="1920" height="1080" src={AudiophileVideoMobile} />
+                    </VideoContainerMobile>
                     <Paragraph>It’s intricate design and functionality is complemented with mobile responsiveness that takes all of the details into account. Check it out for yourself.</Paragraph>
                     <Line />
                     <Header>Check Out The Code</Header>
@@ -31,6 +37,57 @@ function Audiophile() {
     </motion.div>
     )
 } 
+
+const VideoContainer = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: 75%;
+  padding-top: 42.5%;
+  margin: 0px 0px 70px 0px;
+  @media (max-width: 1025px) {
+    width: 90%;
+    padding-top: 51%;
+    margin: 0px 0px 30px 0px;
+}
+`;
+
+const Video = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+`;
+
+const VideoContainerMobile = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: 24%;
+  padding-top: 42.5%;
+  margin: 40px 0px 40px 0px;
+  @media (max-width: 1025px) {
+    width: 24%;
+    padding: 44% 25% 44% 25%;
+    margin: 40px 0px 40px 0px;
+}
+@media (max-width: 650px) {
+    width: 24%;
+    padding: 80% 45% 80% 45%;
+    margin: 40px 0px 40px 0px;
+}
+`;
+
+const VideoMobile = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+`;
 
 const ProjectContainer = styled.div`
     display: flex;

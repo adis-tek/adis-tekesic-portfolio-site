@@ -18,7 +18,7 @@ function Audiophile() {
                 <Paragraph>Audiophile is a complete Ecommerce website with stylish UI and UX design. Since all of my projects are front-end stacks, Audiophile has a cart that taps into local storage and is able to simulate a cart function.</Paragraph>
             </ProjectIntro>
             <ProjectMain>
-                    <Paragraph>The design features a multi-page layout and a form-based checkout page that actively checks the input fields and displays errors realtime.</Paragraph>
+                    <Paragraph>The design features a multi-page layout and a form-based checkout page that actively checks the input fields and displays errors real-time.</Paragraph>
                     <Paragraph>The tech I used for this project mainly revolved around React JS and SASS. React allows for a simple yet powerful set up and SASS makes repetitive styles less of a pain by modulating it and utilizing variables.</Paragraph>
                     <VideoContainerMobile>
                     <VideoMobile width="1920" height="1080" src={AudiophileVideoMobile} />

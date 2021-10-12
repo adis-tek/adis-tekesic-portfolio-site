@@ -18,7 +18,7 @@ function ArchStudio() {
                 <Paragraph>Arch Studio is an architectural group consisting of a small team of architects. On the homepage you’re greeted with an interactive slideshow (desktop only) and disappears on mobile devices.</Paragraph>
             </ProjectIntro>
             <ProjectMain>
-                    <Paragraph>The “about” and “contact” pages have an interesting overlay design and the “contact” page specifically has a small (and minimalistic) form with realtime error detection.</Paragraph>
+                    <Paragraph>The “about” and “contact” pages have an interesting overlay design and the “contact” page specifically has a small (and minimalistic) form with real-time error detection.</Paragraph>
                     <Paragraph>The tech I used for this project mainly revolved around React JS and SASS. React allows for a simple yet powerful set up and SASS makes repetitive styles less of a pain by modulating it and utilizing variables.</Paragraph>
                     <VideoContainerMobile>
                     <VideoMobile width="1080" height="1920" src={ArchStudioVideoMobile} />

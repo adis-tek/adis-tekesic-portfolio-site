@@ -23,7 +23,7 @@ function Designo() {
                     <VideoContainerMobile>
                     <VideoMobile width="1920" height="1080" src={DesignoVideoMobile} />
                     </VideoContainerMobile>
-                    <Paragraph>The contact page has a short form with real time input error detection.</Paragraph>
+                    <Paragraph>The contact page has a short form with real-time input error detection.</Paragraph>
                     <Line />
                     <Header>Check Out The Code</Header>
                     <Paragraph>You can view the live app as well as my code on github below.</Paragraph>

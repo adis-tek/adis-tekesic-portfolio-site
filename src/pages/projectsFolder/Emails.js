@@ -6,9 +6,9 @@ import ArchStudioVideoMobile from '../../videos/arch_studio_mobile.mp4';
 import { motion } from "framer-motion";
 import { fadeIn } from "../../animation";
 import EmailTrio from '../../images/emails/email_trio.png';
-import HimsEmail from '../../images/emails/hims-and-her.png';
+import HimsEmail from '../../images/emails/hims_and_her.png';
 import Foxtrot from '../../images/emails/foxtrot.png';
-import InTheMargin from '../../images/emails/in-the-margin.png';
+import InTheMargin from '../../images/emails/in_the_margin.png';
 
 function Emails() {
     return (
@@ -18,11 +18,11 @@ function Emails() {
             <ProjectIntro>
             <IntroImage src={EmailTrio} />
                 <IntroHeader>Enticing Emails</IntroHeader>
-                <Paragraph>Arch Studio is an architectural group consisting of a small team of architects. On the homepage you’re greeted with an interactive slideshow (desktop only) and disappears on mobile devices.</Paragraph>
+                <Paragraph>Even in the age of social media email is still one of the biggest content distribution channels. And there isn't a better way to put together an email than utilizing content and design to properly craft your message/offer.</Paragraph>
             </ProjectIntro>
             <ProjectMain>
-                    <Paragraph>The “about” and “contact” pages have an interesting overlay design and the “contact” page specifically has a small (and minimalistic) form with real-time error detection.</Paragraph>
-                    <Paragraph>The tech I used for this project mainly revolved around React JS and SASS. React allows for a simple yet powerful set up and SASS makes repetitive styles less of a pain by modulating it and utilizing variables.</Paragraph>
+                    <Paragraph>But email clients run only three forms of emails: 1. Text, 2. Rich text, 3. HTML; making front-end developers who have a knack for email development a crucial team player in a brand's content strategy.</Paragraph>
+                    <Paragraph>Feel free to open these email images in a new tab or save them for high-quality viewing.</Paragraph>
                     <EmailRow>
                     <RowImageContain src={InTheMargin} />
                     <RowImageContain src={HimsEmail} />
@@ -33,10 +33,10 @@ function Emails() {
                     <RowImage src={Foxtrot} />
                     <RowImage src={InTheMargin} />
                     </EmailColumn>
-                    <Paragraph>The footer has a call-to-action button floating off to the right (desktop). For a design-oriented site like this attention to details and minimalism matter.</Paragraph>
+                    <Paragraph>Thanks for viewing my emails! I'll be making more in the future.</Paragraph>
                     <Line />
                     <Header>Check Out The Code</Header>
-                    <Paragraph>You can view the live app as well as my code on github below.</Paragraph>
+                    <Paragraph>You can view my code on github below.</Paragraph>
                     <Links>
                     <a href="https://github.com/adis-tek/email-development" target="_blank"><Github>Github</Github></a>
                     </Links>

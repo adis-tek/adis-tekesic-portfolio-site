@@ -51,9 +51,11 @@ const EmailRow = styled.div`
     position: relative;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
     width: 100%;
     height: auto;
+    padding: 0px 40px;
     margin: 40px 0px;
     @media (max-width: 1025px) {
         display: none;
@@ -67,6 +69,8 @@ const EmailColumn = styled.div`
         position: relative;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
     }
 `;
@@ -232,15 +236,11 @@ const RowImage = styled.img`
 `;
 
 const RowImageContain = styled.img`
-    max-width: 400px;
+    max-width: 300px;
     width: 100%;
     height: auto;
     margin: 20px 40px;
     object-fit: contain;
-    @media (max-width: 1025px) {
-        width: 110%;
-        margin: 20px 50px 20px 50px;
-    }
 `;
 
 const Section = styled.div`

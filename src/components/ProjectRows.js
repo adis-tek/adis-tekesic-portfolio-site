@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import project_breathe_screenshot from '../images/project_breathe/project_breathe_screenshot.png';
+import email_trio from '../images/emails/email_trio.png';
 import gourmet_games_screenshot from '../images/gourmet_games/gourmet_games_screenshot.png';
 import fresh_dish_screenshot from '../images/fresh-dish/fresh_dish_screenshot.png';
 import audiophile from '../images/home/audiophile_screenshot.png';
@@ -12,6 +13,24 @@ function ProjectRows() {
     return (
         <>
             <RowContainer>
+                <Row1Emails>
+                    <RowImageContainer>
+                    <RowImage src={email_trio} />
+                    </RowImageContainer>
+                    <VerticalRow>
+                    <RowText>
+                        <TextBoxHeading>Enticing Emails</TextBoxHeading>
+                        <TextBoxParagraph>
+                        Check out these modern emails that entice readers to visit the site they're coming from.
+                        </TextBoxParagraph>
+                    </RowText>
+                    <RowButtons>
+                    <RowLink>
+                    <Link to="/emails"><RowButton>Take a look</RowButton></Link>
+                    </RowLink>
+                    </RowButtons>
+                    </VerticalRow>
+                </Row1Emails>
             <Row2Large>
                     <RowImageContainer>
                     <RowImage src={audiophile} />
@@ -67,6 +86,16 @@ function ProjectRows() {
                     </RowButtons>
                     </VerticalRow>
                 </Row2Large>
+                <MobileRow>
+                <RowImage2 src={email_trio} />
+                <TextBoxHeading>Enticing Emails</TextBoxHeading>
+                <TextBoxParagraph>
+                Check out these modern emails that entice readers to visit the site they're coming from.
+                </TextBoxParagraph>
+                <RowLink>
+                <Link to="/emails"><RowButton>Take a look</RowButton></Link>
+                </RowLink>
+                </MobileRow>
                 <MobileRow>
                 <RowImage2 src={audiophile} />
                 <TextBoxHeading>Audiophile</TextBoxHeading>
@@ -223,6 +252,35 @@ const Row1 = styled.div`
     justify-content: center;
     background-color: white;
     margin: 200px 0px 150px 0px;
+    @media (max-width: 1025px) {
+        display: none;
+        flex-direction: column;
+        height: 700px;
+        margin: 0px 0px 50px 0px;
+    }
+    @media (max-width: 800px) {
+        height: 600px;
+    }
+    @media (max-width: 700px) {
+        height: 600px;
+    }
+    @media (max-width: 600px) {
+        height: 550px;
+    }
+    @media (max-width: 475px) {
+        height: 500px;
+    }
+`;
+
+const Row1Emails = styled.div`
+    display: flex;
+    max-width: 1350px;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 200px 0px 250px 0px;
     @media (max-width: 1025px) {
         display: none;
         flex-direction: column;

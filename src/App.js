@@ -17,6 +17,7 @@ import Audiophile from "./pages/projectsFolder/Audiophile";
 import TwitterBot from "./pages/projectsFolder/TwitterBot";
 import RedditCrawler from "./pages/projectsFolder/RedditCrawler";
 import InstagramScraper from "./pages/projectsFolder/InstagramScraper";
+import Emails from "./pages/projectsFolder/Emails";
 
 
 function App() {
@@ -65,6 +66,9 @@ function App() {
             </Route>
             <Route path="/instagram-scraper">
               <InstagramScraper />
+            </Route>
+            <Route path="/emails">
+              <Emails />
             </Route>
         </Switch>
         </ScrollToTop>
